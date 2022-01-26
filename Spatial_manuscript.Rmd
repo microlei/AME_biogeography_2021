@@ -1,0 +1,338 @@
+---
+output:
+  bookdown::word_document2:
+    number_sections: false
+  bookdown::pdf_document2:
+    keep_tex: true
+    number_sections: false
+    toc: false
+geometry: margin = 1 in
+font-size: 11 pt
+toc: false
+header-includes:
+  - \usepackage{setspace}
+  - \usepackage{multirow}
+  - \usepackage[pagewise]{lineno}
+  - \DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}
+  - \usepackage{caption}
+bibliography: /Users/Lei/Dropbox (MIT)/Citations/library.bib
+csl: /Users/Lei/Dropbox (MIT)/Citations/aquatic-microbial-ecology.csl
+always_allow_html: true
+---
+
+```{r knitr setup, eval=TRUE, echo=FALSE, cache=FALSE, warning=FALSE, message=FALSE}
+library(knitr)
+library(kableExtra)
+library(tidyverse)
+library(phyloseq)
+library(vegan)
+library(magrittr)
+knitr::opts_chunk$set("echo" = FALSE, "eval"=TRUE, "warning"=FALSE, "message"=FALSE, "cache"=TRUE)
+inline_hook <- function(x){
+	print(x)
+	if(is.list(x)){
+		x <- unlist(x)
+	}
+	if(is.numeric(x)){
+		if(abs(x - round(x)) < .Machine$double.eps^0.5){
+			paste(format(x,big.mark=',', digits=0, scientific=FALSE))
+		} else {
+			paste(format(x,big.mark=',', digits=2, nsmall=2, scientific=FALSE))
+		}
+	} else {
+    	paste0(x)
+	}
+}
+knitr::knit_hooks$set(inline=inline_hook)
+# put script to import here
+```
+\vspace{35mm}
+# Biogeography of reef water microbes from within reef to global scales {-}
+\vspace{35mm}
+Lei Ma$^{1,2}$, Cynthia Becker$^{1,2}$, Laura Weber${^1}$, Chris Sullivan${^3}$, Brian Zgliczynski${^3}$, Stuart Sandin${^3}$, Marilyn Brandt${^4}$, Tyler B. Smith${^4}$, Amy Apprill $^1$${^\ast}$
+\vspace{40mm}
+
+$1$ Woods Hole Oceanographic Institution, Woods Hole, MA 02543, USA
+
+$2$ MIT-WHOI Joint Program in Oceanography/Applied Ocean Science & Engineering, Cambridge and Woods Hole, MA, USA
+
+$3$ Scripps Institution of Oceanography, UC San Diego, La Jolla, CA 92037, USA
+
+$4$ University of Virgin Islands, St. Thomas 00802, USVI
+
+$\ast$ Corresponding author: aapprill@whoi.edu
+\vspace{40mm}
+
+Keywords: 16S rDNA, Biogeography, Coral reef communities, Free-living bacteria, Marine microbial ecology, meso-scale spatial variations, secondary analysis, Microbial diversity
+
+\newpage
+\linenumbers
+\doublespacing
+# Abstract {-}
+
+Seawater microorganisms play an important role in coral reef ecosystem functioning and can be influenced by biological, chemical, and physical features of reefs. As coral reefs continue to respond to environmental changes, the reef seawater microbiome has been proposed as a conservation tool for monitoring perturbations. However, the spatial variability of reef seawater microbial communities is not well studied, limiting our ability to make generalizable inferences across reefs. In order to better understand how microorganisms are distributed at multiple spatial scales, we examined seawater microbial communities in Florida Reef Tract and U.S. Virgin Islands reef systems using a nested sampling design. On three reefs per reef system, we sampled seawater at regular spatial intervals close to the benthos.  We assessed the microbial community composition of these waters using ribosomal RNA gene amplicon sequencing. Our analysis revealed that reef water microbial communities varied as a function of reef system and individual reefs, but communities did not differ within reefs and were not significantly influenced by benthic composition. For the reef system and inter-reef differences, abundant microbial taxa were found to be potentially useful indicators of environmental difference due to their high prevalence and variance. We further examined reef water microbial biogeography on a global scale using a secondary analysis of five studies, which revealed that microbial communities were more distinct with increasing geographic distance. These results suggest that biogeography is a distinguishing feature for reef water microbiomes, and that development of monitoring criteria may necessitate regionally-specific sampling and analyses.
+
+\newpage
+# 1 Introduction {-}
+Coral reefs are currently experiencing significant challenges due to global and local factors [@hughesCoralReefsAnthropocene2017]. Among them, climate change and ocean acidification affect corals worldwide while stressors such as human impacts and disease outbreaks are more localized. These crises are driving the development of new management and conservation strategies to preserve and monitor reef biodiversity. Awareness of the coral as a holobiont - an assemblage of a host and all of its associated symbiotic microorganisms [@rosenbergRoleMicroorganismsCoral2007; @knowltonMultispeciesMicrobialMutualisms2003] - has spurred research into establishing microbial solutions to reef stress, such as coral probiotics and microbiome-based monitoring [@peixotoBeneficialMicroorganismsCorals2017; @glaslMicrobialIndicatorsDiagnostic2017]. In particular, a holistic characterization of microbes in coral reefs will aid in predicting reef resilience and environmental threats [@kellyEcosystemMicrobiologyCoral2018].
+
+Reefs harbor many distinct niches for bacterial and archaeal communities, including corals, sponges, sediments, and the water-column itself [@mcdevitt-irwinResponsesCoralAssociatedBacterial2017; @toutVariabilityMicrobialCommunity2014]. Free living water column microbes, residing above the reef substrate, are influenced by hydrological conditions [@sweetTemporalSpatialPatterns2010; @beckerMicrobialNutrientDynamics2020], general benthic community composition [@kellyLocalGenomicAdaptation2014; @haasEffectsCoralReef2011a], local nutrient regimes [@vanduylLinkageSmallscaleSpatial2001; @nelsonDepletedDissolvedOrganic2011], and temporal dynamics [@weberDielDailySpatial2020; @beckerMicrobialNutrientDynamics2020]. When combined, these influences cause reef-associated seawater microbiomes to be readily distinguishable between reefs, as well as between zones within a reef [@jeffriesSpatiallyExtensiveMicrobial2015; @salernoBiogeographyPlanktonicCoralassociated2016; @fradeSpatialPatternsMicrobial2020]. Microbial communities can be powerful indicators of reef health and environmental conditions [@glaslMicrobialIndicatorsDiagnostic2017]. Indeed, as reefs transition from coral to algae dominated, the exudates released from the benthos also likely shift, causing increased heterotrophy and decreased oligotrophy in the seawater microbiome [@nelsonCoralMacroalgalExudates2013; @haasEffectsCoralReef2011a]. In a proccess called microbialization, the heterotroph-dominated microbial community further depresses growth of coral and encourages the growth of algae [@haasGlobalMicrobializationCoral2016a; @kellyEcosystemMicrobiologyCoral2018]. This microbial phase shift may be an important process to monitor in at-risk reefs. Additionally, reef microorganisms respond rapidly to nutrient and temperature fluctuations, potentially providing a sensitive and non-invasive diagnostic or predictive tool for perturbations that may provide knowledge prior to visible reef changes [@glaslMicrobialIndicatorsEnvironmental2019; @beckerMicrobialNutrientDynamics2020].
+
+Implementation of large scale reef water monitoring efforts for reef microorganisms is partially limited by our understanding of reef seawater microbial diversity across spatial scales [@glaslMicrobialIndicatorsDiagnostic2017; @bourneInsightsCoralMicrobiome2016]. Biogeographic patterns of coral reef microbial assemblages have been found at a variety of spatial scales. Small scale patterns such as within a coral skeleton [@marcelinoHighlyStructuredProkaryote2018], in the boundary layer overlying the coral mucus [@weberCoralEcosphereUnique2019], and in micro-habitats generated by coral structures [@schottnerSpatialScalesBacterial2012] highlight potential mechanisms affecting reef microbial composition, but may not represent the state of an entire reef. On the other hand, studies and models of marine microbial distribution at the scale of oceans [@amendMacroecologicalPatternsMarine2012; @hellwegerBiogeographicPatternsOcean2014] provide insight into the global drivers of microbial abundance, but are not specific to the unique environments of reefs. Therefore, a better understanding of the biogeography of coral reef seawater microbes across distinct spatial scales is warranted.
+
+The goal of this study is to understand the variability of coral reef seawater microbial communities across different spatial scales. We examined this question in two parts. For the first part, we examined reef water microbial communities within and between two reef systems to understand the influence of both reef and reef benthic composition on microbial diversity (Figure 1A). Secondly, in order to quantify the impact of larger geographic distances on reef water microbial communities, we conducted a secondary analysis of aggregated 16S rRNA gene sequences from five studies that used similar sampling methodology (Figure 1B, Table S1). We predicted that microbial community structure would differ primarily on the scale of individual reefs but and secondarily on underlying benthic structure. Additionally, we expected the secondary analysis to recapitulate the individual reef and reef system-based biogeographic patterns seen in the Fl and VI systems on a more global scale.
+
+# 2 Materials and Methods {-}
+
+## 2.1 FL and VI transects: Sampling {-}
+
+The first part of this study took place in two reef systems, the Florida Reef Tract (Fl) in June 2019 and off the southern coast of St. Thomas in the U.S. Virgin Islands (VI) in February 2020. A total of three reefs were sampled in the Florida Keys; the northernmost reef was Biscayne, located within the boundaries of Biscayne National Park, the reef Grecian was located at the Grecian Rocks reef off the coast of Key Largo, and the reef Dry Tortugas was located within Dry Tortugas National Park. All reefs in the Florida Reef Tract (Fl) were forereefs within the barrier reef. Similarly, three reefs were sampled in St. Thomas (VI); Brewers Bay and Black Point were forereef zones on fringing reefs a few hundred meters from the coast while Flat Cay was a fringing reef located near an uninhabited island named Flat Cay about two kilometers off the coast (Table \@ref(tab:spatial-table)). Average sampling depth was between 5.0 and 7.1 meters, with the exception of the Dry Tortugas, which was deeper with an average depth of 18.0 meters. Due to the difference in season of sampling, the average temperature in the Florida reefs was slightly higher than in the Virgin Islands reefs (28.7 °C and 26.9 °C respectively).
+
+At each reef, three 10 meter transects were taken by laying down a 10 m weighted line that was marked every meter. Water samples were taken by a diver using a 60 or 100 mL syringe positioned approximately 5 cm above the benthos at each meter line. The transects were laid haphazardly, but did not intersect with each other. Because of inclement conditions, only 1 transect was collected at the Biscayne reef. At the Fl reefs, benthic composition - represented by percent cover of coral skeleton, crustose coralline algae, cyanobacteria, hard coral, macroalgae, non biological, other invertebrates, soft coral, sponge, and turf algae - was determined using large-area imagery collected from 10 by 10 m area plots. All transects were placed within these 100 m^2^ plots. Stratified random points (2500) were dropped across the reef area and classified to generate reef-wide cover estimates - see full methods in @foxLimitedCoralMortality2019. At the VI reefs, benthic composition was recorded at the precise location of each syringe sample using a video survey of the transect line as well as noted in writing by a diver during sampling. Video and written record were cross-referenced and each sample was then classified into a single category from algae, dead coral, live coral, rock, sand, sponge, and undetermined.
+
+To capture the seawater microbial community, 60 mL of the seawater was filtered through a 0.22 µm Supor filter (25 mm; Pall Corporation). The water volume of 60 mL has previously been found to be comparable to larger volumes (1-2L) for characterizing seawater microbial communities using amplicon sequencing [@weberCoralEcosphereUnique2019]. Filters were placed in 2 mL cryovials, flash frozen in a liquid nitrogen dry shipper, and processed upon returning to Woods Hole, MA.
+
+## 2.2 FL and VI transects: DNA extraction, PCR amplification, and sequencing {-}
+
+DNA was extracted from the filters using the DNeasy PowerBiofilm Kit (Qiagen) according to manufacturer protocols. Seven DNA extraction controls, consisting of unused 0.22 µm filters, were processed alongside samples. Extracted DNA was quantified using the Qubit 2.0 fluorometer HS dsDNA assay (ThermoFisher Scientific). Primers 515FY [@paradaEveryBaseMatters2016] and 806RB [@apprillMinorRevisionV42015] containing Illumina overhang adapter sequences were used to amplify the V4 region of the small subunit rRNA gene in bacteria and archaea. PCR reactions contained 14.75 µL molecular grade water, 5 µL GoTaq Flexi 5X buffer (Promega Corporation), 2.5 µL of 25 mM MgCl~2~, 1 µL of 10 mM dNTPs, 1 µL of 10 mM forward and reverse primers, 0.5 µL GoTaq DNA polymerase (Promega) and 1 µL of DNA template. Three PCR controls consisting of 1 µL of PCR-grade water as template were also included, as well as microbial genomic DNA from a Human Microbiome Project mock community (BEI Resources, NIAID, NIH as part of the Human Microbiome Project: Genomic DNA from Microbial Mock Community B (Even, Low Concentration), v5.1L, for 16S rRNA Gene Sequencing, HM-782D). The first stage PCR conditions were: 28 cycles (95°C 20s, 55°C 20s, 72°C 5 min) with a 2 min 95°C hot start and 10 min 72°C final elongation. PCR products were screened for quality using gel electrophoresis and purified using the MinElute PCR purification kit (Qiagen). PCR products were then barcoded using the Nextera XT Index Kit v2 set A primers (Illumina) using the following conditions: 8 cycles (95°C 30s, 55°C 30s, 72°C 30s) with 3 min 95° hot start and 5 min 72°C final elongation. Barcoded products were purified as above and concentrations of the purified products were assessed using the HS dsDNA assay on the Qubit 2.0 fluorometer (ThermoFisher Scientific). Products were diluted with Tris HCl to 5 nM before being pooled randomly into two libraries. The libraries were diluted to a final loading concentration of 50 pM with a 5% spike-in of 50 pM PhiX. The libraries were then sequenced on the iSeq 100 System (Illumina) using paired-end 150 bp reads. Data are accessible in the NCBI Sequence Read Archive under bioproject PRJNA733652.
+
+## 2.3 FL and VI transects: Data analysis {-}
+
+All code used to generate the figures and analyses in this paper is publicly available on GitHub (https://github.com/microlei/AME_biogeography_2021). Sequences were processed using the DADA2 package (v. 1.12.1) in R (v. 3.6.2) [@callahanDADA2HighresolutionSample2016]. Due to the short length of iSeq reads (150bp), it was not possible to merge the reads and therefore only forward reads were used in analysis. Forward reads were filtered using the default parameters of the function filterAndTrim in DADA2 except: trimLeft=20 (to remove the primer), truncLen=125, truncQ=2, maxEE=1. The parameter of truncLen was determined after observing quality dropping during the last 5 bp of the fastq reads. Chimera removal and amplicon sequence variant (ASV) generation was also done by DADA2. Taxonomy was assigned, without percent identity clustering, using the naive Bayesian classifier method of @wangNaiveBayesianClassifier2007 trained on the Silva SSU rRNA database (Version 138) [@pruesseSILVAComprehensiveOnline2007]. Putative contaminant reads were identified using the prevalence method in the R package decontam (v. 1.4.0) [@davisSimpleStatisticalIdentification2018a] by using the negative controls to identify contaminants; contaminant reads were subsequently removed. Reads matching the Kingdom Eukaryota or Order Chloroplast were also removed.
+
+Data analysis was completed in RStudio (v 1.2.5.001) [@rstudioteamRStudioIntegratedDevelopment2019] using, primarily, the packages phyloseq (v 1.28.0) and vegan (v 2.5-7) [@mcmurdiePhyloseqPackageReproducible2013; @oksanenVeganCommunityEcology2020]. Graphics were generated using ggplot2 (v 3.3.3) [@wickhamGgplot2ElegantGraphics2016]. Alpha diversity metrics were estimated using the *estimate_richness* function in vegan with unrarefied read counts. Differences in alpha diversity metrics were assessed using pairwise t tests corrected for multiple comparisons using the holm method [@holmSimpleSequentiallyRejective1979]. To understand the variability of microbial community composition across all samples, ASV counts were transformed to relative abundances and Bray-Curtis dissimilarity was calculated between each sample pair. Dissimilarity values were plotted using non-metric multidimensional scaling ordination (NMDS). Taxa that were differentially abundant were identified using the package corncob (v 0.2.0)[@bryandmartinCorncobCountRegression2021], with a false discovery rate cutoff of 0.05 using Benjamini-Hochberg correction.
+
+In order to account for differences in read counts arising from variances in sequencing depth and read quality as well as to improve the quality of the distance-decay analyses, the Aitchison distance was used instead of Bray-Curtis when comparing community similarity across studies in the secondary analysis and, for consistency, between samples in the transect-based study [@gloorMicrobiomeDatasetsAre2017; @clarkWhatDrivesStudydependent2021]. The package zCompositions (v 1.3.4) [@palareaalbaladejoZCompositionsPackageMultivariate2015] was used to impute zeroes before performing a centered-log-ratio (CLR) transformation on the count data. Taking the euclidean distances of the CLR transformed data generated the Aitchison distances. Geographic distances were calculated using the *gdist* function in the package Imap (v 1.32) [@johnrwallaceImap2012], which uses the Vincenty inverse formula for ellipsoids. The *adonis2* function in the vegan package was used to perform PERMANOVA analysis (999 iterations) on the dissimilarity indices at the scales of transect (within reef), reef, and reef system. Differences in dispersion at various spatial scales were calculated using the vegan function *betadisper* and tested using the vegan function *permutest*, which performs a permutation test (999 permutations) of multivariate homogeneity of groups dispersions. The *mantel* function in the vegan package was used (999 permutation) to test for correlation between the geographic distance matrix and the community similarity for both the secondary analysis and transect-based study.
+
+## 2.4 Secondary analysis: Sample information {-}
+The methods for sample collection, DNA extraction, PCR amplification, and sequencing used by the five studies in the secondary analysis are highly similar with small variations. The studies collected seawater from reefs at a variety of depths, ranging from surface (0.3 m) to benthic (13 m). Seawater sampling was done by filtering replicate 2 liter volumes of seawater through 0.22 µm pore size, 25 mm Supor® filters using a peristaltic pump. For DNA extraction, all studies used bead beating followed by spin column purification, although the DNA extraction reagents differed. @neaveDifferentialSpecificityClosely2017 used the PowerPlant Pro DNA isolation kit (Qiagen) while  @weberMicrobialSignaturesProtected2020 used a sucrose-lysis with bead beating method followed by column purification with the Qiagen DNeasy Blood and Tissue Kit [@santoroActivityAbundanceDiversity2010] as well as a phenol chloroform protocol [@urakawaHighAbundanceAmmoniaOxidizing2010] and pooled the extracts. Unpublished data from Becker et al. used the DNeasy PowerBiofilm kit (Qiagen). Full methods for these unpublished data are included in the Supplemental Text S1. The remaining two studies used the extraction method described in @santoroActivityAbundanceDiversity2010.
+
+All studies amplified the V4 hypervariable region of the 16S rRNA gene using the reverse primer described in @apprillMinorRevisionV42015, but two studies [@neaveDifferentialSpecificityClosely2017; and @apprillMicrobialEcologyCoraldominated2021] used the forward primer not optimized for Thaumarchaeota [@caporasoGlobalPatterns16S2011] while the others used the forward primer described in @paradaEveryBaseMatters2016. All studies used the 250 bp paired-end Illumina MiSeq platform, although @weberMicrobialSignaturesProtected2020 used the Fluidgm® platform (Fluidgm Corporation) for library preparation while others followed the methods described in @kozichDevelopmentDualIndexSequencing2013. Primer choice, sequencing technology, and DNA extraction method are known to influence downstream 16S rRNA gene sequence analysis, such as in marine biofilms and seawater [@corcollComparisonFourDNA2017; @urakawaHighAbundanceAmmoniaOxidizing2010]. A comparison of different DNA extraction techniques on aquatic samples concluded that rare taxa are more affected by differing extraction technique, driving small but significant differences in Bray-Curtis distances [@liuRarePlanktonSubcommunities2019]. However, the secondary analysis is based on pairwise Aitchison distances, which are less influenced by presence/absence of individual taxa [@gloorMicrobiomeDatasetsAre2017] and does not seek to compare groups of samples based on distances.
+
+## 2.5 Secondary Analysis: Data acquisition and processing {-}
+
+Raw sequence data from the five studies in the secondary analysis were collected from the NCBI Sequence Read Archive (SRA) and for the unpublished study, with consent from the authors. Because the transect comparisons collected in Fl and VI were sequenced with shorter reads, these samples were excluded from the secondary analysis. Using metadata from the studies, sequence files were filtered such that only samples taken from reef associated seawater (and not controls) were included. Samples were classified based on the reef that was sampled as well as the overall reef system (Table S1). Primer sequences were removed using cutadapt [@martinCutadaptRemovesAdapter2011]. Sequences were processed in DADA2 as above with the parameters trimLeft=(20,20), truncLen=(205,205), truncQ=(2,2), maxEE=(1,1), and error estimation was performed by pooling all sequences into one error model. Paired forward and reverse reads were assembled into one contig and trimmed to 230 bp. Chimera removal, ASV generation, and taxonomy assignment were performed as in section 2.3. Four samples with fewer than 10,000 reads were removed. Because negative controls are specific to each study, contaminant reads were not identified or removed, but reads matching the Kingdom Eukaryota and Order Chloroplast were removed. Data analysis was performed as described in section 2.3. Briefly, the package zCompositions [@palareaalbaladejoZCompositionsPackageMultivariate2015] was used to impute zeroes before using the center-log-ratio transform to normalize the read counts. The Aitchison distance was then plotted against the geographic distance between samples to examine the distance-decay relationship between samples.
+
+# 3 Results {-}
+
+```{r results paragraph 1 and 2}
+taxonomy <- read.delim("../processed/taxonomy.txt", "\t", header=TRUE, row.names=1, check.names = FALSE)
+asvs <- read.delim("../processed/ASVs.txt", "\t", header=TRUE, row.names=1, check.names = FALSE)
+metadata <- read.delim("../processed/metadata.csv", ",", header = TRUE, row.names=1, check.names=FALSE)
+ps <- phyloseq(otu_table(as.matrix(asvs), taxa_are_rows=TRUE), sample_data(as.data.frame(metadata)), tax_table(as.matrix(taxonomy)))
+ps.rel <- transform_sample_counts(ps, function(x) x/sum(x))
+
+dapicount <- mean(metadata$bact.ml, na.rm=T)
+sparsity <- round(100*length(which(otu_table(ps)==0))/length(otu_table(ps)), 1)
+top90 <- prune_taxa(genefilter_sample(ps.rel, filterfun_sample(topf(0.9)), A=1), ps.rel)
+asv_per_sample <- floor(mean(colSums(otu_table(ps)!=0)))
+```
+## 3.1 Fl and VI transects: Site characteristics {-}
+
+In the Florida reef system, Dry Tortugas and Grecian were dominated by macroalgae (56-67% of cover), while Biscayne was dominated by turf algae (45% of cover). Hard coral was more abundant at Dry Tortugas (21%) and Biscayne (20 %), but only comprised 3% of Grecian (Figure S1A). In the Virgin Islands system, live coral predmoninated at Brewer’s Bay and Flat Cay (40-43%), but algae was slightly more prevalent at Black Point (40% of cover) (Figure S1B).
+
+At the time of sampling, all reefs with the exception of Dry Tortugas had been experiencing outbreaks of Stony Coral Tissue Loss Disease (SCTLD) to varying degrees of severity and duration [@prechtUnprecedentedDiseaseRelatedCoral2016; @brandtEmergenceInitialImpact2021].
+
+## 3.2 Fl and VI transects: Sequence output {-}
+After quality control of the Fl and VI 16S rRNA gene amplicons from reef water transects, a total of `r sum(colSums(asvs))` reads were retained and the number of reads per sample ranged from `r min(colSums(asvs))` to `r max(colSums(asvs))` with a median of `r floor(median(colSums(asvs)))`. A total of `r ntaxa(ps)` amplicon sequence variants (ASVs) were identified over `r nsamples(ps)` samples. Per sample unique ASVs averaged `r floor(asv_per_sample)`. The abundance matrices of the ASV counts per sample were very sparse, comprising of `r format(sparsity, digits=3)`% zeros, indicating that a small number of taxa comprised the majority of the dataset. Specifically, only `r ntaxa(top90)` ASVs make up the top 90% of observations across all samples.
+
+## 3.3 Fl and VI transects: Alpha and beta diversity metrics {-}
+```{r results permdisp}
+res <- readRDS("../processed/disper_adonis_tests.rds")
+res_s <- readRDS("../processed/disper_adonis_substrate.rds")
+```
+Alpha diversity metrics of the reef water microbiomes, including observed ASV richness, Shannon index (a measure of evenness), and Simpson's index (a measure of dominance) measured at the transect (within reef), individual reef, and reef system level in Fl and VI showed comparable values with some notable differences. At the transect level (within reefs), observed ASVs were most variable (highest and lowest values) at the Dry Tortugas reefs, with some outliers at both Fl and VI reefs. Simpson’s index was most variable at the Dry Tortugas and Brewer’s Bay reef (Figure S2, pairwise t-test: p<0.0001 for all significant comparisons involving Dry Tortugas and Brewer's Bay). At the individual reef level, significantly lower Simpson’s index values were detected at Dry Tortugas (mean of 0.93) and Brewer’s Bay (mean of 0.94) compared to the other reefs (mean of 0.97). Both reefs also displayed significantly lower Shannon index values than three other reefs, except Biscayne (Figure S2, pairwise t-test: p<0.002 for significant differences, p>0.1 for nonsignificant differences). At the reef system level (Fl compared to VI), each of the diversity metrics were significantly different (Figure S2).
+
+An NMDS ordination of Bray-Curtis dissimilarities between reef water microbiomes showed that the VI reefs clustered together along with the Dry Tortugas reef water microbial communities, and Fl reefs Grecian and Biscayne were more separated (Figure 2A). Bray-Curtis dissimilarities for reef system (Fl and VI) and individual reefs differed significantly, but transects within a reef were not significantly different from each other (PERMANOVA)(Table \@ref(tab:perm-table)).
+
+A comparison of microbial community beta dispersion, calculated as the distance from the centroid of each reef's reef microbial communities in principal coordinate space, showed significant differences at the level of reef system (permutest; F=`r res$system$disper.f`, p=`r res$system$disper.p`), individual reef (F=`r res$site$disper.f`, p=`r res$site$disper.p`), and within-reef transects (permutest; F=`r res$transect$disper.f`, p=`r res$transect$disper.p`). However, a post hoc test (Tukey's Honest Significant Differences) on the reef-based and transect-based beta dispersions found that the difference was driven solely by the comparisons between the Dry Tortugas reef versus Grecian and Black Point (Figure 2B). The Dry Tortugas reef had low variance among its samples while Grecian and Black Point had a larger variance among samples. When Dry Tortugas was removed from the analysis, there was no longer a significant effect of individual reef or transect on beta dispersion.
+
+While only reef-wide benthic composition was recorded for the Fl reefs, we recorded the underlying benthic composition for each sample in the VI reefs to enable comparison between substrate type and the overlying seawater microbiome. When all samples from VI were considered together, Bray-Curtis dissimilarities weakly correlated with benthic substrate type (PERMANOVA; R^2^=`r res_s$subst$ungrouped$perm.r`, Pseudo-F=`r res_s$subst$ungrouped$perm.f`, p=`r res_s$subst$ungrouped$perm.p`). However, a comparison of live coral compared to other categories (grouped together) did not show a correlation (PERMANOVA; R^2^=`r res_s$coral$ungrouped$perm.r`, Pseudo-F= `r res_s$coral$ungrouped$perm.f`, p=`r res_s$coral$ungrouped$perm.p`), and when samples were nested by their respective reef, the correlation with benthic substrate was no longer significant (PERMANOVA; Pseudo-F=`r res_s$subst$site$perm.f`, p= `r res_s$subst$site$perm.p`). Group dispersions were not different between benthic substrate classes or between live coral and other substrates and no taxa were found to be differentially abundant in either of these contrasts (permutest; F=`r res_s$subst$ungrouped$disp.f`, p=`r res_s$subst$ungrouped$disp.p`).
+
+```{r results corncob}
+da.site <- readRDS("../processed/corncob_all_sites.rds")
+```
+## 3.4 Fl and VI transects: Differentially abundant taxa {-}
+To investigate which taxa may be driving differences in community composition with respect to individual reefs, a differential abundance (DA) analysis was performed on the dataset. DA analysis revealed `r length(da.site$significant_taxa)` taxa that were significantly differentially abundant (p<0.05, false discovery rate corrected using the Benjamini-Hochberg method) across the six reefs sampled. These significant taxa included common oligotrophic marine groups, such as the SAR11 and SAR86 clade, *Cyanobiaceae*, SAR116, and the Archaean Marine Group II. Opportunistic copiotrophs, such as *Flavobacteriaceae*, *Rhodobacteraceae*, and *Vibrionaceae* were also well represented. All significant taxa were among the most abundant and most variable (displayed the highest variance in their relative abundances across samples) in the dataset (Figure S3). A list of the significant taxa along with their sequences is provided in Supplemental Table 2.
+
+## 3.5 Secondary analysis: Sequence output and methods analysis {-}
+```{r results meta stats}
+m_taxonomy <- read.delim("../SMeta/processed/taxonomy.txt", "\t", header=TRUE, row.names=1, check.names = FALSE)
+m_asvs <- read.delim("../SMeta/processed/ASVs.txt", "\t", header=TRUE, row.names=1, check.names = FALSE)
+m_metadata <- read.delim("../SMeta/processed/metadata.csv", ",", header = TRUE, row.names=1, check.names=FALSE)
+m_ps <- phyloseq(otu_table(as.matrix(m_asvs),taxa_are_rows=TRUE), sample_data(as.data.frame(m_metadata)),tax_table(as.matrix(m_taxonomy)))
+m_asv_per_sample <-floor(mean(colSums(otu_table(m_ps)!=0)))
+disper_primer <- readRDS("../processed/disper_primer.rds")
+```
+After assembly and quality control of the raw sequence reads from the five studies comprising the secondary analysis, a total of `r sum(colSums(m_asvs))` reads were retained. The number of reads per sample ranged from `r min(colSums(m_asvs))` to `r max(colSums(m_asvs))` with a median of `r floor(median(colSums(m_asvs)))`. A total of `r ntaxa(m_ps)` ASVs were identified across the samples of all studies. Per sample unique ASVs averaged `r m_asv_per_sample`. Although the Fl and VI transect samples had on average greater sequencing depth and ASV count per sample than the studies in the secondary analysis, the relationship between sequencing depth and observed ASVs does not appear to have been saturated in either case (Figure S4).
+
+Because two studies in the analysis used the 806R primer while the other three used the 806RB primer, we evaluated the impact of this difference on the study. The group dispersions between the two primer sets are not significantly different (permutest; F=`r disper_primer[[1]][[4]][1]`, p=`r disper_primer[[1]][[6]][1]`), indicating that primer choice did not significantly contribute to community variability. While DNA extraction methods were generally similar across studies, this was not similarly tested as a factor because only two studies shared the same method.
+
+## 3.6 Distance-Decay relationship {-}
+```{r dist-decay-paragraph}
+table_dd <- read_csv("../figures/table_dist_decay.csv")
+dd_vi <- table_dd[2,]
+dd_fl <- table_dd[3,]
+dd_m <- table_dd[5,]
+```
+In order to investigate the impact of geographic distance on the microbial community, a geographic distance matrix was generated using the samples' physical location and compared to the Aitchison distances calculated between microbial communities (a measure of dissimilarity). The comparisons of samples within transects at an individual reef spanned <10 m, while individual reefs were 1-3 km apart for VI reefs and 34-279 km for Fl reefs. Mantel tests of these two matrices revealed that physical distance was significantly correlated with the Aitchison distance between samples within each (Fl and VI) reef system, with a stronger relationship in Florida (r=`r dd_fl[3]`, p=`r dd_fl[4]` for Fl and r=`r dd_vi[3]`, p=`r dd_vi[4]` for VI) (Table \@ref(tab:dist-decay-table)). There was also a relationship between geographic distances and microbial communities for both Fl and VI reef systems combined, with comparisons spanning `r table_dd[4,2]` (r=`r table_dd[4,3]`, p=`r table_dd[4,4]`).
+
+Incorporating the additional reef water microbiomes from the secondary analysis provided us with the opportunity to extend this study to thousands of kilometers. Distances between reefs within a reef system ranged from 1-2775 km while reef systems were separated by 421-16,874 km. The Aitchison distance between these secondary analysis samples showed a significant relationship to geographic distance (r=`r dd_m[3]`, p=`r dd_m[4]`)(Table \@ref(tab:dist-decay-table)).
+
+In the Fl and VI study, distance-decay plots showed no relationship between geographic distance and microbial community similarity within reefs (at the transect level) at the scale of meters (p>0.05) (Figure 3A). However, at the scale of kilometers, there was a negative relationship between geographic distance and microbial community similarity for the Fl and VI study (Figure 3B) as well as for the more expansive secondary analysis (Figure 3C), with microbial communities becoming less similar with increasing distance (R^2^ = 0.11, p<0.001; R^2^ = 0.08, p<0.001, respectively). The slope of the negative distance-decay relationship increased in magnitude as the geographic extent of the samples increased (Table \@ref(tab:dist-decay-table), Figure 3C).
+
+## 3.7 Drivers of distance-decay relationship {-}
+
+```{r environment}
+perm.env <- readRDS("../processed/perm_env.rds")
+depth_mantel <- readRDS("../processed/depth_mantel.rds")
+temp_mantel <- readRDS("../processed/temp_mantel.rds")
+```
+
+In the secondary analysis, the effects of collection depth, temperature, and reef type were examined as potential drivers of community similarity. A PERMANOVA assessing the marginal impacts of these abiotic factors as well the effect of study found that study accounted for the most variation (R^2^=`r extract2(perm.env[1,],"R2")`, Pseudo-F=`r extract2(perm.env[1,],"statistic")`, p=`r extract2(perm.env[1,],"p.value")`), distantly followed by reef type (R^2^=`r extract2(perm.env[2,],"R2")`, Pseudo-F=`r extract2(perm.env[2,],"statistic")`, p=`r extract2(perm.env[2,],"p.value")`), collection depth (R^2^=`r extract2(perm.env[3,],"R2")`, Pseudo-F=`r extract2(perm.env[3,],"statistic")`, p=`r extract2(perm.env[3,],"p.value")`), and finally temperature (R^2^=`r extract2(perm.env[4,],"R2")`, Pseudo-F=`r extract2(perm.env[4,],"statistic")`, p=`r extract2(perm.env[4,],"p.value")`). Despite explaining the least amount of variation, difference in temperature was significantly correlated with Aitchison distance (Mantel: r=`r temp_mantel$statistic`, p=`r temp_mantel$signif`), meaning communities that were more different (distant) in temperature were also more dissimilar. A similar correlation for depth was not found (Mantel: r=`r depth_mantel$statistic`, p=`r depth_mantel$signif`).
+
+# 4 Discussion {-}
+
+In this study we used a nested distance sampling design to examine how reef seawater microbiomes vary at multiple spatial scales, including within reefs, between individual reefs in a reef system as well as across northern Caribbean (Fl and VI) forereef systems. Overall, we found that individual reef and reef system-related features had the largest influence on microbial community diversity and composition. No differences in microbial community diversity or composition were detected within different locations on individual reefs, and there was a weak correlation with the benthic substrate underlying the sample. Despite the large number of observed microbial taxa in the transect-based study, just over one hundred of the most abundant were identified as differentially abundant between reefs, suggesting that these abundant taxa may be useful indicators of reef change. We also used data from five previous studies in a secondary analysis to understand the biogeography of more distant reef seawater microbiomes, and this revealed that microbial communities are more distinct with increasing geographic distance.
+
+## 4.1 Microbial communities differentiate by individual reef (>1 km) and reef system (>100 km), but not within each reef (<10 m) {-}
+
+Counter to expectations, the benthic substrate did not have a strong influence on the composition of the seawater microbiome. Although there is evidence that substrate type influences the surrounding seawater microbial community [@toutVariabilityMicrobialCommunity2014; @schottnerSpatialScalesBacterial2012], we did not find a correlation in these data, nor did we find differentially abundant microbial taxa between substrate types. It is likely that differential hydrodynamic conditions, which have not yet been measured in the context of coral reef benthic-pelagic microbial interactions, may play a role in these differential results. As such, additional research concerning benthic-pelagic exchange on coral reefs is needed to understand the impact of substrate seawater microorganisms close to the reef surface.
+
+All six reefs were distinguishable in terms of the composition of their reef water microbial communities, despite the three VI reefs being separated by only 1 to 3 kilometers. These results align with our expectation that microbes in the water column above reefs would display reef-specific signatures because marine microbial communities are reflective of their physical and chemical environment  [@azamMicrobialStructuringMarine2007; @kellyEcosystemMicrobiologyCoral2018]. While benthic substrate had a weak influence on the seawater microbes, there were other influences that varied between the reefs, including season, time of sampling, depth, and reef type, but these generally were consistent within VI or Fl and therefore difficult to statistically examine. Indeed, in our secondary analysis,  which included a larger number of reef sites and more geographic locations, temperature, depth, and reef type were small but significant contributors to the community variation. It must be noted, however, that all variables examined were highly confounded by the specific sampling scheme of each study. For example, @beckerMicrobialNutrientDynamics2020 only sampled reef seawater from four forereefs in the Virgin Islands at 0.3 meter depth, and @weberMicrobialSignaturesProtected2020 contains a disproportionate number of samples at cooler temperatures (67 out of 82 samples below average temperature of the secondary analysis), all from Cuban reefs. In addition to our study, other studies of the Indian Ocean and Northwestern Hawaiian islands have shown strong microbial biogeographic signatures [@salernoBiogeographyPlanktonicCoralassociated2016; @jeffriesSpatiallyExtensiveMicrobial2015]. Hydrodynamics likely plays a major role in explaining some of the biogeographical portioning between reef water microbial communities because it impacts distribution and transport of nutrients and facilitates dispersal of pelagic microorganisms. Previous studies have suggested links between water masses and microbial community composition [@galandHydrographyShapesBacterial2010; @jeffriesSpatiallyExtensiveMicrobial2015; @varelaLatitudinalTrendsCrenarchaeota2008]. Comparison of reef water microbial communities within and between hydrographic regimes and current systems could help us better understand this influence.
+
+Surprisingly, we did not identify consistent differences in the microbial communities within each reef (at the transect level). Samples collected within meters of each other were indistinguishable in the VI and Fl, but trends in beta dispersion did suggest some within-reef variability, indicating differences in beta diversity among one or more groups [@andersonMultivariateDispersionMeasure2006]. Dispersion was greatest at Grecian and lowest at Dry Tortugas, both Florida reefs. Grecian reef is located in the Upper Keys, which on average has elevated nutrients, organic carbon, and turbidity compared to the Lower Keys [@lirmanProximityLandbasedSources2007]. In contrast, the Dry Tortugas reef is located within a marine protected zone (US National Park), is more distant from the shore, was the deepest reef sampled (60 feet), and was the only reef not experiencing active outbreaks of Stony Coral Tissue Loss Disease at the time of sampling. These factors could contribute to the relative homogeneity of the samples collected at Dry Tortugas. Reef depth and coastal influence may be among the regional geographic conditions that influence the variability of microbial communities in reef associated seawater [@fradeSpatialPatternsMicrobial2020; @weberMicrobialSignaturesProtected2020].
+
+## 4.2 Community similarity decays with distance beginning at the kilometer scale {-}
+
+The distance-decay of community similarity - a widely studied relationship in ecology [@soininenDistanceDecaySimilarity2007] - quantifies the decrease in community similarity with increased geographic distance. Typically, communities that are closer geographically are also more similar to each other compositionally [@soininenDistanceDecaySimilarity2007]. One mechanism that drives this relationship is spatial structuring, where locations closer together have more similar environments, thus leading to selection of more similar communities. In the absence of selection (e.g., in a homogeneous environment), neutral drift interacts with dispersal limitation to differentiate communities over space [@soininenDistanceDecaySimilarity2007; @hansonBiogeographicPatternsProcesses2012]. These mechanisms represent two hypotheses for what drives species distributions: environmental selection and historical contingency [@martinyMicrobialBiogeographyPutting2006]. A number of studies have examined the distance-decay relationship in both soil and marine environments and found that microorganisms tend to display a weaker (i.e., less negative) relationship compared to macroorganisms on the same scale, a phenomenon attributed to the small size and large populations of microorganisms leading to greater dispersal [@greenSpatialScalingMicrobial2006; @martinyMicrobialBiogeographyPutting2006; @meyerWhyMicrobesExhibit2018].
+
+The sampling pattern in this study allowed us to assess this biogeographic pattern in the context of coral reef associated seawater. Within transects in a reef (<10 m scale), no distance-decay relationship was found, likely due to high mixing rates on the reef. However, there was a significant correlation between community similarity and geographic distance beginning at the reef level (1 km scale), and the steepness of the relationship increased with an increase in geographic extent (10,000 km scale) (Table \@ref(tab:dist-decay-table)). Differences in the steepness and strength of correlation of the distance-decay relationship may reflect different mechanisms driving the decay at multiple spatial scales [@martinyDriversBacterialVdiversity2011]. The larger correlation and slope observed in the Fl reefs compared to VI reefs may reflect the orientation of Fl reefs in a north-south line along the Florida current, with the most distant reef upstream of the two closer reefs, while the VI reefs were closer together and not oriented in relation to the surrounding Caribbean current. The autocorrelation of distance and environmental similarity [@lirmanProximityLandbasedSources2007] along the Florida Reef Tract likely drives the stronger correlation compared to the VI reefs. The steep slope and weaker correlation found in the secondary analysis likely reflects historical factors such as dispersal limitation and drift as distant reefs recruit from different metapopulations [@clarkWhatDrivesStudydependent2021; @hellwegerBiogeographicPatternsOcean2014].
+
+## 4.3 Abundant taxa are most variable and more likely to differentiate individual reefs {-}
+
+Although we recovered a total of over twenty thousand microbial ASVs from the Fl and VI transect sampling, the vast majority were rare and samples were dominated by just over one thousand highly abundant taxa. This is a common occurance in microbiome sequencing, especially with the advent of high throughput deep sequencing, and there is debate over the importance of these rare taxa [@mcmurdieWasteNotWant2014; @caoEffectsRareMicrobiome2021]. Abundant taxa tend to be the most prevalent, and in this study, also displayed the highest variance in their relative abundance values between samples. The ASVs that were identified as differentially abundant between reefs were also among the most abundant taxa (Figure S3). @glaslMicrobialIndicatorsEnvironmental2019 found that the relative abundances of indicator taxa in coral reef seawater that best predict environmental conditions range from 0.5-20%, and those taxa were also prevalent throughout that study's sampling period. Overlap in taxonomic assignment between these indicator taxa and differentially abundant taxa found within this study include *Synechococcus*, *Prochlorococcus*, Rhodobacteraceae, unclassified Alphaproteobacteria, and others. Because extremely rare taxa can be difficult to reliably detect, more frequent, shallower sequencing may be more important for capturing the salient variability of a reef.
+
+## 4.4 Caveats {-}
+Although the nested design surveyed seawater microbial communities across multiple spatial scales, the temporal scale of seawater variability was not considered in this study. The Florida samples were taken in June, while the St. Thomas samples were taken in February. Each reef was only sampled once and not throughout the day. Seasonal as well as diurnal/tidal cycles in reef seawater microbial communities are well documented [@beckerMicrobialNutrientDynamics2020; @glaslComparativeGenomecentricAnalysis2020; @fradeSpatialPatternsMicrobial2020; @weberDielDailySpatial2020]. The differences between the Florida and VI microbial communities may be in part due to the different seasons in which the samples were taken. Temporal differences in sampling can make direct comparisons between distant reefs challenging, even within the same study [@weberDielDailySpatial2020]. While microbial communities are sensitive to environmental conditions, coral reef seawater remains distinct from other seawater habitats [@beckerMicrobialNutrientDynamics2020] and variation of the microbial community is better explained by reef-level environmental parameters rather than seasonal differences [@glaslMicrobialIndicatorsEnvironmental2019]. Within a reef, repeated sampling throughout the calendar year may be needed to establish the baseline variability.
+
+In contrast to many other seawater microbiome studies, including those in the secondary analysis, this study filtered a small volume of seawater (60 mL) for each sample rather than the more typical 1-2 L. @weberCoralEcosphereUnique2019 directly examined the effect of sampling volume and found that while species richness modestly increased with larger volumes due to sampling rare taxa, beta diversity and overall community composition was not influenced by sampling volume.
+
+## 4.5 Conclusions {-}
+
+In conclusion, we suggest that due to reef and reef system-level influences, the development of reef water microbiome monitoring criteria may need to be regionally tailored. We found that the community composition of reef seawater microbiomes are distinguishable even when reefs are a few kilometers apart and that there can be large differences in the beta dispersion within a reef. Detecting a shift in the community composition as a whole will necessitate an understanding of each reef region’s variability. Individual reefs within a reef system may also be experiencing different regional stressors, such as varying degrees of anthropogenic influence. Such differences may be reflected in both the baseline microbial community composition and variability as reef conditions change. Additionally, microbial taxa common between reef regions are vastly outnumbered by taxa that are unique, making it difficult to develop a generalized database of indicator microbial taxa for reef environental conditions. Overall, we found that the seawater microbial communities of reefs closer together are more similar, and that the local oceanographic conditions which differentiate these communities are important to investigate.
+
+# Acknowledgements {-}
+We thank Carolyn Miller, Joseph Townsend, Kathryn Cobleigh, Sonora Meiling, Kelsey Beavers, Erinn Muller, Abigail Clark and the captain and crew of the M/V Alucia for field assistance and Illumina Inc. for technical support. Samples were collected under Florida Keys National Marine Sanctuary permit #FKNMS-2019-046, US National Park Service permit DRTO-2019-SCI-0010 and and USVI territory permit DFW19057U. This project was supported by an OceanX sponsored cruise on the M/V Alucia, with additional funding provided to A.A. by the Rockefeller Philanthropy Advisors, Dalio Foundation, and other generous donors of the Oceans 5 project and NSF OCE-1938147 and NSF OCE-1928761 awards.
+
+\newpage
+
+# References {-}
+\setlength{\parindent}{-0.25in}
+\setlength{\leftskip}{0.25in}
+\noindent
+
+<div id="refs"></div>
+
+\setlength{\parindent}{0in}
+\setlength{\leftskip}{0in}
+
+\newpage
+
+# Figures and tables {-}
+\newpage
+**Figure 1. Locations of reefs in the present study and the secondary analysis** A. Sampling locations and method for the transect-based study. Six reefs were surveyed across two reef systems. At each reef, three 10 meter transects were laid and divers used a syringe to sample seawater just above the benthos at 1 meter intervals. B. The locations of the five studies in the secondary analysis span many major reef systems across the globe. Collections for all studies were performed by the same lab group using nearly identical techniques in the field and in the lab.
+
+\newpage
+
+**Figure 2. Reefs have distinct microbial communities and variable group dispersions** A. An NMDS ordination using Bray-Curtis dissimilarities. Tries=20, 2D stress=0.1006136.  B. The group dispersions calculated as distance to centroid using the Bray-Curtis dissimilarity metric. The vertical line in each boxplot indicates the median, the box hinges represent the first and third quartiles while the whiskers extend to 1.5*IQR (interquartile range). Colors correspond to the individual reef and letters indicate significance groups (pairwise t test; p-adjusted<0.05).
+
+\newpage
+
+**Figure 3. Reef seawater communities exibit a distance-decay relationship at the scale of 100 km but not at <10 m scale** A. The pairwise geographic distances between samples within each transect in the Fl/VI-based study is plotted on the x-axis and the corresponding Aitchison distances are plotted on the y axis. Between transect distances are not known and therefore not included. B. Distance-decay plot of all pairwise distances (i.e., not just within a transect) between samples collected in the Fl/VI-based study. C. Distance-decay plot using the samples from the five studies included in the secondary analysis.
+
+\newpage
+
+```{r spatial-table, echo=FALSE, cache=FALSE}
+table_spatial <- read_csv("../figures/spatial_site_table.csv")
+kbl(table_spatial, align="c", booktabs=TRUE, caption="Florida reef tract (Fl) and St. Thomas (VI) Sampling locations") %>%
+  kable_paper(full_width=FALSE) %>%
+  kable_styling(latex_options="scale_down") %>%
+  row_spec(row=0, bold=T) %>%
+  column_spec(column=1, bold=T) %>%
+  collapse_rows(columns=1, valign="top")
+```
+
+```{r perm-table, echo=FALSE, cache=FALSE}
+options(knitr.kable.NA = '')
+table_perm <- read_csv("../figures/table_permanova.csv")
+kbl(table_perm, align="lccccc", booktabs=TRUE, caption="Summary of PERMANOVA results based on Bray-Curtis dissimilarties of microbial community abundances grouped at the spatial scales of within reefs, between reefs, and between reef regions") %>%
+  kable_paper() %>%
+  kable_styling(latex_options = "scale_down", full_width = FALSE) %>%
+  row_spec(row=0, bold=T) %>%
+  column_spec(6, bold=ifelse(table_perm$P>0.05|is.na(table_perm$`Pseudo-F`), F, T)) %>%
+  add_indent(c(2,3,5,6,8,9)) %>%
+  footnote(
+    "Df - degrees of freedom; R2 - R-squared value; Pseudo-F values derived from 999 permutations. Values in bold are significant at P<0.05.",
+    footnote_as_chunk = T
+  )
+```
+
+```{r dist-decay-table, echo=FALSE, cache=FALSE}
+table_dd <- read_csv("../figures/table_dist_decay.csv", col_types="ccccc")
+table_dd[1,3:4] <- lapply(table_dd[1,3:4], function(x) {paste0(x, footnote_marker_symbol(1))})
+table_dd[2:5,5] <- lapply(table_dd[2:5,5], function(x) {paste0(x, footnote_marker_symbol(2))})
+kbl(table_dd, align="c", escape=FALSE, booktabs=TRUE, caption="Distance decay relationships at multiple spatial scales") %>%
+  kable_paper(full_width=FALSE) %>%
+  kable_styling(latex_options="scale_down") %>%
+  row_spec(row=0, bold=T) %>%
+  footnote(symbol = c("Mantel test not performed because distances exist for samples within transects but not between, therefore matrix had >50% missing values", "Linear fit significant at p < 0.01"))
+```
+
+\newpage
+# Supplemental information {-}
+
+*Supplemental information for the article:*
+
+**Biogeography of reef water microbes from within reef to global scales**
+
+Lei Ma$^{1,2}$, Cynthia Becker$^{1,2}$, Laura Weber${^1}$, Chris Sullivan${^3}$, Brian Zgliczynski${^3}$, Stuart Sandin${^3}$, Marilyn Brandt${^4}$, Tyler B. Smith${^4}$, Amy Apprill $^1$${^\ast}$
+
+$1$ Woods Hole Oceanographic Institution, Woods Hole, MA 02543, USA
+
+$2$ MIT-WHOI Joint Program in Oceanography/Applied Ocean Science & Engineering, Cambridge and Woods Hole, MA, USA
+
+$3$ Scripps Institution of Oceanography, UC San Diego, La Jolla, CA 92037, USA
+
+$4$ University of Virgin Islands, St. Thomas 00802, USVI
+
+$\ast$ Corresponding author: aapprill@whoi.edu
+
+**This supplemental information contains:**
+
+* Text S1: Materials and methods for Becker et al unpublished data used in secondary analysis
+* Figure S1. Percent cover of different substrate types in Fl and VI reef systems
+* Figure S2. Alpha diversity metrics, particularly Shannon and Simpson's indices, begin to vary at the individual reef level
+* Figure S3. ASVs show strong linear relationship between rank abundance and variance. Differentially abundant taxa are also among the most abundant and variable
+* Figure S4. Observed ASVs is correlated with sequence depth and does not appear to saturate
+
+**Tables included separately**
+
+* Table S1. List of reefs and reef systems sampled in the secondary analysis
+* Table S2. Differentially abundant ASVs between reefs in Fl and VI-based study
+
+\newpage
+**Text S1: Materials and methods for Becker et al unpublished data used in secondary analysis**
+
+
+\newpage
+**Figure S1. Percent cover of different substrate types in Fl and VI reef systems** A. Percent cover of benthic substrate types calculated for each Fl reef overall using a photography-based survey. B. Percent cover of benthic substrate types at the VI reefs, determined at each sample location by a diver and video-recording along the transect line.
+
+\newpage
+**Figure S2. Alpha diversity metrics, particularly Shannon and Simpson's indices, begin to vary at the individual reef level** Observed ASVs, Shannon index, and Simpsons index are shown here at the transect (within reef), individual reef, and reef system level for the reef seawater microbiomes in the Fl/VI transect-based study. Measures are for unrarefied counts. The vertical line in each boxplot indicates the median, the box hinges represent the first and third quartiles while the whiskers extend to 1.5*IQR (interquartile range). Letters indicate significance groups among reefs and asterisks indicate a significant difference between transects in the same reef or between reef systems (pairwise t test; p-adjusted<0.05).
+
+\newpage
+**Figure S3. ASVs show strong linear relationship between rank abundance and variance. Differentially abundant taxa are also among the most abundant and variable** Total read counts for ASVs from the Fl/VI-based study were transformed to ranked abundances, with 1 being the most abundant. Variances were calculated based on relative abundances, to reduce the effect of high read counts, then transformed to ranked variances. Highlighted in teal are the ASVs identified as significantly differentially abundant between reefs.
+
+\newpage
+**Figure S4. Observed ASVs is correlated with sequence depth and does not appear to saturate** The total reads per sample has a positive correlation with the number of observed ASVs. The samples from this present study (in blue) have high read counts but displays the same relationship as the samples in the secondary analysis (in grey). Lines indicate linear regression fit for just the secondary analysis samples (black) and for the Fl/VI transect samples (red).

@@ -1,0 +1,226 @@
+﻿,sample,site,reef_system,date_collected,PRJ,study,lat_lon,lat,lon,note,collectionDepth,reefType,temperature,methodPrimer,methodExtraction
+SRR11914596,M_SW_Bluewater,Offshore,Micronesia,2012-11-02,PRJNA636810,Apprill et al 2021,6.158 N 160.567 E,6.158,160.567,,1,offshore,29.99,806R,santoro2010
+SRR11914594,M_SW_KAP2_10m,Kapingamarangi,Micronesia,2012-11-05,PRJNA636810,Apprill et al 2021,1.029 N 154.762 E,1.029,154.762,,10,fore reef,30.03,806R,santoro2010
+SRR11914595,M_SW_KAP2_1m,Kapingamarangi,Micronesia,2012-11-05,PRJNA636810,Apprill et al 2021,1.029 N 154.762 E,1.029,154.762,,1,fore reef,31.55,806R,santoro2010
+SRR11914593,M_SW_KAP3_12m,Kapingamarangi,Micronesia,2012-11-06,PRJNA636810,Apprill et al 2021,1.035 N 154.766 E,1.035,154.766,,12,lagoon,30.3,806R,santoro2010
+SRR11914592,M_SW_KAP5_1m,Kapingamarangi,Micronesia,2012-11-06,PRJNA636810,Apprill et al 2021,1.038 N 154.751 E,1.038,154.751,,1,fore reef,30.6,806R,santoro2010
+SRR11914590,M_SW_KAP6_10m,Kapingamarangi,Micronesia,2012-11-07,PRJNA636810,Apprill et al 2021,1.051 N 154.734 E,1.051,154.734,,10,fore reef,30.14,806R,santoro2010
+SRR11914591,M_SW_KAP6_1m,Kapingamarangi,Micronesia,2012-11-07,PRJNA636810,Apprill et al 2021,1.051 N 154.734 E,1.051,154.734,,1,fore reef,31.28,806R,santoro2010
+SRR11914571,M_SW_KOS1_13m,Kosrae,Micronesia,2012-10-31,PRJNA636810,Apprill et al 2021,5.263 N 162.984 E,5.263,162.984,,13,fringing,29.97,806R,santoro2010
+SRR11914599,M_SW_KOS2_1m,Kosrae,Micronesia,2012-10-31,PRJNA636810,Apprill et al 2021,5.259 N 162.990 E,5.259,162.99,,1,fringing,30.09,806R,santoro2010
+SRR11914597,M_SW_KOS3_10m,Kosrae,Micronesia,2012-11-01,PRJNA636810,Apprill et al 2021,5.266 N 162.935 E,5.266,162.935,,10,fringing,30,806R,santoro2010
+SRR11914598,M_SW_KOS3_1m,Kosrae,Micronesia,2012-11-01,PRJNA636810,Apprill et al 2021,5.266 N 162.935 E,5.266,162.935,,1,fringing,30,806R,santoro2010
+SRR11914587,M_SW_NAK1_10m,Nukuoro,Micronesia,2012-11-08,PRJNA636810,Apprill et al 2021,3.821 N 154.936 E,3.821,154.936,,10,fore reef,30.02,806R,santoro2010
+SRR11914588,M_SW_NAK1_1m,Nukuoro,Micronesia,2012-11-08,PRJNA636810,Apprill et al 2021,3.821 N 154.936 E,3.821,154.936,,1,fore reef,30.01,806R,santoro2010
+SRR11914586,M_SW_NAK2_1m,Nukuoro,Micronesia,2012-11-08,PRJNA636810,Apprill et al 2021,3.821 N 154.920 E,3.821,154.92,,1,fore reef,30.47,806R,santoro2010
+SRR11914574,M_SW_OLIM1_6m,Olimareo,Micronesia,2012-10-26,PRJNA636810,Apprill et al 2021,7.682 N 145.860 E,7.682,145.86,,6,fore reef,29.49,806R,santoro2010
+SRR11914572,M_SW_OLIM2_10m,Olimareo,Micronesia,2012-10-26,PRJNA636810,Apprill et al 2021,7.681 N 145.850 E,7.681,145.85,,10,fore reef,29.29,806R,santoro2010
+SRR11914573,M_SW_OLIM2_1m,Olimareo,Micronesia,2012-10-26,PRJNA636810,Apprill et al 2021,7.681 N 145.850 E,7.681,145.85,,1,fore reef,30.01,806R,santoro2010
+SRR11914585,M_SW_POH1_1m,Pohnpei,Micronesia,2012-11-10,PRJNA636810,Apprill et al 2021,6.863 N 158.107 E,6.863,158.107,,1,fringing,29.78,806R,santoro2010
+SRR11914583,M_SW_POH2_10m,Pohnpei,Micronesia,2012-11-10,PRJNA636810,Apprill et al 2021,6.905 N 158.090 E,6.905,158.09,,10,fringing,,806R,santoro2010
+SRR11914584,M_SW_POH2_1m,Pohnpei,Micronesia,2012-11-10,PRJNA636810,Apprill et al 2021,6.905 N 158.090 E,6.905,158.09,,1,fringing,30.02,806R,santoro2010
+SRR11914589,M_SW_WOLE1_10m,Woleai,Micronesia,2012-10-24,PRJNA636810,Apprill et al 2021,7.339 N 143.830 E,7.339,143.83,,10,fore reef,29.35,806R,santoro2010
+SRR11914600,M_SW_WOLE1_1m,Woleai,Micronesia,2012-10-24,PRJNA636810,Apprill et al 2021,7.339 N 143.830 E,7.339,143.83,,1,fore reef,29.4,806R,santoro2010
+SRR11914578,M_SW_WOLE2_1m,Woleai,Micronesia,2012-10-24,PRJNA636810,Apprill et al 2021,7.330 N 143.840 E,7.33,143.84,,1,lagoon,29.99,806R,santoro2010
+SRR11914576,M_SW_WOLE3_1m,Woleai,Micronesia,2012-10-25,PRJNA636810,Apprill et al 2021,7.334 N 143.872 E,7.334,143.872,,1,fore reef,29.58,806R,santoro2010
+SRR11914575,M_SW_WOLE3_6m,Woleai,Micronesia,2012-10-25,PRJNA636810,Apprill et al 2021,7.334 N 143.872 E,7.334,143.872,,6,fore reef,29.1,806R,santoro2010
+SRR11914601,M_SW_YAP1_1m,Yap,Micronesia,2012-10-21,PRJNA636810,Apprill et al 2021,9.507 N 138.175 E,9.507,138.175,,1,fore reef,,806R,santoro2010
+SRR10393051,USVItide-10,Yawzi,Virgin Islands,2017-07-22,PRJNA578400,Becker et al 2020,18.3145005 N 64.7260978 W,18.3145005,-64.7260978,,0.3,fore reef,29,806RB,santoro2010
+SRR10393050,USVItide-108,Yawzi,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3145005 N 64.7260978 W,18.3145005,-64.7260978,,0.3,fore reef,29.1,806RB,santoro2010
+SRR10393028,USVItide-11,Cocoloba,Virgin Islands,2017-07-22,PRJNA578400,Becker et al 2020,18.3154146 N 64.7608498 W,18.3154146,-64.7608498,,0.3,fore reef,29.07,806RB,santoro2010
+SRR10393017,USVItide-110,Cocoloba,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3154146 N 64.7608498 W,18.3154146,-64.7608498,,0.3,fore reef,29.02,806RB,santoro2010
+SRR10392995,USVItide-112,Tektite,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3096396 N 64.7222252 W,18.3096396,-64.7222252,,0.3,fore reef,28.94,806RB,santoro2010
+SRR10392986,USVItide-115,Ditliff,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3139204 N 64.7645268 W,18.3139204,-64.7645268,,0.3,fore reef,29.47,806RB,santoro2010
+SRR10393047,USVItide-125,Cocoloba,Virgin Islands,2017-07-24,PRJNA578400,Becker et al 2020,18.3154146 N 64.7608498 W,18.3154146,-64.7608498,,0.3,fore reef,28.87,806RB,santoro2010
+SRR10393046,USVItide-126,Yawzi,Virgin Islands,2017-07-24,PRJNA578400,Becker et al 2020,18.3145005 N 64.7260978 W,18.3145005,-64.7260978,,0.3,fore reef,28.83,806RB,santoro2010
+SRR10393044,USVItide-128,Ditliff,Virgin Islands,2017-07-24,PRJNA578400,Becker et al 2020,18.3139204 N 64.7645268 W,18.3139204,-64.7645268,,0.3,fore reef,28.91,806RB,santoro2010
+SRR10393043,USVItide-129,Tektite,Virgin Islands,2017-07-24,PRJNA578400,Becker et al 2020,18.3096396 N 64.7222252 W,18.3096396,-64.7222252,,0.3,fore reef,28.85,806RB,santoro2010
+SRR10393042,USVItide-13,Ditliff,Virgin Islands,2017-07-22,PRJNA578400,Becker et al 2020,18.3139204 N 64.7645268 W,18.3139204,-64.7645268,,0.3,fore reef,29.02,806RB,santoro2010
+SRR10393035,USVItide-16,Tektite,Virgin Islands,2017-07-22,PRJNA578400,Becker et al 2020,18.3096396 N 64.7222252 W,18.3096396,-64.7222252,,0.3,fore reef,29.04,806RB,santoro2010
+SRR10393034,USVItide-25,Yawzi,Virgin Islands,2017-07-22,PRJNA578400,Becker et al 2020,18.3145005 N 64.7260978 W,18.3145005,-64.7260978,,0.3,fore reef,29.44,806RB,santoro2010
+SRR10393032,USVItide-27,Tektite,Virgin Islands,2017-07-22,PRJNA578400,Becker et al 2020,18.3096396 N 64.7222252 W,18.3096396,-64.7222252,,0.3,fore reef,29.31,806RB,santoro2010
+SRR10393031,USVItide-28,Cocoloba,Virgin Islands,2017-07-22,PRJNA578400,Becker et al 2020,18.3154146 N 64.7608498 W,18.3154146,-64.7608498,,0.3,fore reef,29.54,806RB,santoro2010
+SRR10393030,USVItide-29,Ditliff,Virgin Islands,2017-07-22,PRJNA578400,Becker et al 2020,18.3139204 N 64.7645268 W,18.3139204,-64.7645268,,0.3,fore reef,29.45,806RB,santoro2010
+SRR10393024,USVItide-43,Cocoloba,Virgin Islands,2017-07-22,PRJNA578400,Becker et al 2020,18.3154146 N 64.7608498 W,18.3154146,-64.7608498,,0.3,fore reef,29.1,806RB,santoro2010
+SRR10393023,USVItide-44,Yawzi,Virgin Islands,2017-07-22,PRJNA578400,Becker et al 2020,18.3145005 N 64.7260978 W,18.3145005,-64.7260978,,0.3,fore reef,29.13,806RB,santoro2010
+SRR10393022,USVItide-45,Tektite,Virgin Islands,2017-07-22,PRJNA578400,Becker et al 2020,18.3096396 N 64.7222252 W,18.3096396,-64.7222252,,0.3,fore reef,28.74,806RB,santoro2010
+SRR10393016,USVItide-50,Ditliff,Virgin Islands,2017-07-22,PRJNA578400,Becker et al 2020,18.3139204 N 64.7645268 W,18.3139204,-64.7645268,,0.3,fore reef,29.67,806RB,santoro2010
+SRR10393015,USVItide-59,Yawzi,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3145005 N 64.7260978 W,18.3145005,-64.7260978,,0.3,fore reef,28.84,806RB,santoro2010
+SRR10393013,USVItide-61,Cocoloba,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3154146 N 64.7608498 W,18.3154146,-64.7608498,,0.3,fore reef,29.04,806RB,santoro2010
+SRR10393012,USVItide-62,Ditliff,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3139204 N 64.7645268 W,18.3139204,-64.7645268,,0.3,fore reef,28.95,806RB,santoro2010
+SRR10393009,USVItide-65,Tektite,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3096396 N 64.7222252 W,18.3096396,-64.7222252,,0.3,fore reef,28.84,806RB,santoro2010
+SRR10393007,USVItide-75,Yawzi,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3145005 N 64.7260978 W,18.3145005,-64.7260978,,0.3,fore reef,29.15,806RB,santoro2010
+SRR10393004,USVItide-77,Tektite,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3096396 N 64.7222252 W,18.3096396,-64.7222252,,0.3,fore reef,29.59,806RB,santoro2010
+SRR10393001,USVItide-80,Ditliff,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3139204 N 64.7645268 W,18.3139204,-64.7645268,,0.3,fore reef,29.19,806RB,santoro2010
+SRR10393000,USVItide-81,Cocoloba,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3154146 N 64.7608498 W,18.3154146,-64.7608498,,0.3,fore reef,29.28,806RB,santoro2010
+SRR10392997,USVItide-91,Cocoloba,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3154146 N 64.7608498 W,18.3154146,-64.7608498,,0.3,fore reef,29.37,806RB,santoro2010
+SRR10392996,USVItide-92,Tektite,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3096396 N 64.7222252 W,18.3096396,-64.7222252,,0.3,fore reef,29.05,806RB,santoro2010
+SRR10392994,USVItide-93,Yawzi,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3145005 N 64.7260978 W,18.3145005,-64.7260978,,0.3,fore reef,29.11,806RB,santoro2010
+SRR10392992,USVItide-95,Ditliff,Virgin Islands,2017-07-23,PRJNA578400,Becker et al 2020,18.3139204 N 64.7645268 W,18.3139204,-64.7645268,,0.3,fore reef,29.43,806RB,santoro2010
+SRR1993005,Al-FahalA,Al-Fahal,Saudi Arabia,2014-03-02,PRJNA280923,Neave et al 2017,22.2517 N 38.9564 E,22.2517,38.9564,,15,fringing,26,806R,powerplantpro
+SRR1993006,Al-FahalB,Al-Fahal,Saudi Arabia,2014-03-02,PRJNA280923,Neave et al 2017,22.2517 N 38.9564 E,22.2517,38.9564,,15,fringing,26,806R,powerplantpro
+SRR1993001,Al-Lith1A,Al-Lith,Saudi Arabia,2014-01-28,PRJNA280923,Neave et al 2017,19.8994 N 40.1515 E,19.8994,40.1515,,10,fringing,27,806R,powerplantpro
+SRR1993002,Al-Lith1B,Al-Lith,Saudi Arabia,2014-01-28,PRJNA280923,Neave et al 2017,19.8994 N 40.1515 E,19.8994,40.1515,,10,fringing,27,806R,powerplantpro
+SRR1993003,Al-Lith2A,Al-Lith,Saudi Arabia,2014-01-28,PRJNA280923,Neave et al 2017,19.9429 N 40.1374 E,19.9429,40.1374,,10,fringing,27,806R,powerplantpro
+SRR1993004,Al-Lith2B,Al-Lith,Saudi Arabia,2014-01-28,PRJNA280923,Neave et al 2017,19.9429 N 40.1374 E,19.9429,40.1374,,10,fringing,27,806R,powerplantpro
+SRR1993013,Am-Soa-2A,Aunuu Island,American Samoa,2014-11-21,PRJNA280923,Neave et al 2017,14.2839 S 170.5615 W,-14.2839,-170.5615,,3,fringing,28.5,806R,powerplantpro
+SRR1993014,Am-Soa-2B,Aunuu Island,American Samoa,2014-11-21,PRJNA280923,Neave et al 2017,14.2839 S 170.5615 W,-14.2839,-170.5615,,3,fringing,28.5,806R,powerplantpro
+SRR1993007,Inner-FsarA,Inner-Fsar,Saudi Arabia,2014-03-02,PRJNA280923,Neave et al 2017,22.2317 N 39.0293 E,22.2317,39.0293,,16,fringing,26,806R,powerplantpro
+SRR1993008,Inner-FsarB,Inner-Fsar,Saudi Arabia,2014-03-02,PRJNA280923,Neave et al 2017,22.2317 N 39.0293 E,22.2317,39.0293,,16,fringing,26,806R,powerplantpro
+SRR1993017,KAP1,Kapingamarangi,Micronesia,2012-11-05,PRJNA280923,Neave et al 2017,1.0366 N 154.7658 E,1.0366,154.7658,,8,lagoon,30.5,806R,powerplantpro
+SRR1993018,KAP2,Kapingamarangi,Micronesia,2012-11-05,PRJNA280923,Neave et al 2017,1.0295 N 154.7621 E,1.0295,154.7621,,10,fore reef,30,806R,powerplantpro
+SRR1993019,KAP3,Kapingamarangi,Micronesia,2012-11-06,PRJNA280923,Neave et al 2017,1.0352 N 154.7656 E,1.0352,154.7656,,12,lagoon,30.3,806R,powerplantpro
+SRR1993020,KOS1,Kosrae,Micronesia,2012-10-31,PRJNA280923,Neave et al 2017,5.2627 N 162.9836 E,5.2627,162.9836,,13,fringing,30,806R,powerplantpro
+SRR1993015,Magnetic-IslandA,Magnetic Island,Australia:Magnetic Island,2013-11-11,PRJNA280923,Neave et al 2017,15.0883 S 146.8520 E,-15.0883,146.852,,5,wreck,,806R,powerplantpro
+SRR1993016,Magnetic-IslandB,Magnetic Island,Australia:Magnetic Island,2013-11-11,PRJNA280923,Neave et al 2017,15.0883 S 146.8520 E,-15.0883,146.852,,5,wreck,,806R,powerplantpro
+SRR1993009,Maldives-1A,Vavvaru,Maldives,2014-01-15,PRJNA280923,Neave et al 2017,5.4183 N 73.3516 E,5.4183,73.3516,,3,patch reef,27.5,806R,powerplantpro
+SRR1993010,Maldives-1B,Vavvaru,Maldives,2014-01-15,PRJNA280923,Neave et al 2017,5.4183 N 73.3516 E,5.4183,73.3516,,3,patch reef,27.5,806R,powerplantpro
+SRR1993011,Maldives-5A,Konomoondo,Maldives,2014-01-19,PRJNA280923,Neave et al 2017,5.3348 N 73.4660 E,5.3348,73.466,,3,fringing,27.5,806R,powerplantpro
+SRR1993012,Maldives-5B,Konomoondo,Maldives,2014-01-19,PRJNA280923,Neave et al 2017,5.3348 N 73.4660 E,5.3348,73.466,,3,fringing,27.5,806R,powerplantpro
+SRR1993021,NAK1,Nukuoro,Micronesia,2012-11-08,PRJNA280923,Neave et al 2017,3.8207 N 154.9364 E,3.8207,154.9364,,10,fore reef,30,806R,powerplantpro
+SRR1993022,NAK2,Nukuoro,Micronesia,2012-11-08,PRJNA280923,Neave et al 2017,3.8210 N 154.9204 E,3.821,154.9204,,10,fore reef,30,806R,powerplantpro
+SRR1993023,OLIM2,Olimareo,Micronesia,2012-10-26,PRJNA280923,Neave et al 2017,7.6806 N 145.8495 E,7.6806,145.8495,,10,fore reef,29.3,806R,powerplantpro
+SRR1993024,WOLE1,Woleai,Micronesia,2012-10-24,PRJNA280923,Neave et al 2017,7.3394 N 143.8296 E,7.3394,143.8296,,10,fore reef,29.4,806R,powerplantpro
+SRR1993025,WOLE2,Woleai,Micronesia,2012-10-24,PRJNA280923,Neave et al 2017,7.3299 N 143.8402 E,7.3299,143.8402,,6,lagoon,29.6,806R,powerplantpro
+SRR1992997,Yanbu1A,Yanbu,Saudi Arabia,2014-01-25,PRJNA280923,Neave et al 2017,24.1888 N 37.6625 E,24.1888,37.6625,,6,fringing,28.7,806R,powerplantpro
+SRR1992998,Yanbu1B,Yanbu,Saudi Arabia,2014-01-25,PRJNA280923,Neave et al 2017,24.1888 N 37.6625 E,24.1888,37.6625,,6,fringing,28.7,806R,powerplantpro
+SRR1992999,Yanbu2A,Yanbu,Saudi Arabia,2014-01-25,PRJNA280923,Neave et al 2017,24.0546 N 37.8596 E,24.0546,37.8596,,6,fringing,28.8,806R,powerplantpro
+SRR1993000,Yanbu2B,Yanbu,Saudi Arabia,2014-01-25,PRJNA280923,Neave et al 2017,24.0546 N 37.8596 E,24.0546,37.8596,,6,fringing,28.8,806R,powerplantpro
+SRR1993026,YAP1,Yap,Micronesia,2012-10-21,PRJNA280923,Neave et al 2017,9.5066 N 138.1755 E,9.5066,138.1755,,1,fore reef,28,806R,powerplantpro
+SRR6380100,Cuba_1,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.774528 N 78.91517 W,20.774528,-78.91517,surface seawater,0,back reef,26.86,806RB,sucrosephenol
+SRR6380083,Cuba_2,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.774528 N 78.91517 W,20.774528,-78.91517,benthic seawater,10,back reef,26.82,806RB,sucrosephenol
+SRR6380082,Cuba_3,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.774528 N 78.91517 W,20.774528,-78.91517,P. astreoides seawater,10,back reef,26.82,806RB,sucrosephenol
+SRR6380031,Cuba_4,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.774528 N 78.91517 W,20.774528,-78.91517,P. astreoides seawater,10,back reef,26.82,806RB,sucrosephenol
+SRR6380029,Cuba_84,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.774528 N 78.91517 W,20.774528,-78.91517,P. strigosa seawater,10,back reef,26.82,806RB,sucrosephenol
+SRR6380052,Cuba_85,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.774528 N 78.91517 W,20.774528,-78.91517,O. faveolata seawater,10,back reef,26.82,806RB,sucrosephenol
+SRR6380064,Cuba_86,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.774528 N 78.91517 W,20.774528,-78.91517,O. faveolata seawater,10,back reef,26.82,806RB,sucrosephenol
+SRR6380026,Cuba_87,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.774528 N 78.91517 W,20.774528,-78.91517,P. astreoides seawater,10,back reef,26.82,806RB,sucrosephenol
+SRR6380058,Cuba_88,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.774528 N 78.91517 W,20.774528,-78.91517,P. strigosa seawater,10,back reef,26.82,806RB,sucrosephenol
+SRR6380057,Cuba_89,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.774528 N 78.91517 W,20.774528,-78.91517,P. astreoides seawater,10,back reef,26.82,806RB,sucrosephenol
+SRR6380030,Cuba_90,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.774528 N 78.91517 W,20.774528,-78.91517,P. astreoides seawater,10,back reef,26.82,806RB,sucrosephenol
+SRR6380027,Cuba_91,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.774528 N 78.91517 W,20.774528,-78.91517,benthic seawater,10,back reef,26.82,806RB,sucrosephenol
+SRR6380025,Cuba_92,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.774528 N 78.91517 W,20.774528,-78.91517,A. cervicornis seawater,10,back reef,26.82,806RB,sucrosephenol
+SRR6380068,Cuba_5,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.81478 N 78.88320 W,20.81478,-78.8832,A. cervicornis seawater,2,lagoon,25.73,806RB,sucrosephenol
+SRR6380086,Cuba_6,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.81478 N 78.88320 W,20.81478,-78.8832,A. cervicornis seawater,2,lagoon,25.73,806RB,sucrosephenol
+SRR6380099,Cuba_10,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.82598 N 78.97931 W,20.82598,-78.97931,P. astreoides seawater,17,fore reef,26.74,806RB,sucrosephenol
+SRR6380098,Cuba_100,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.82598 N 78.97931 W,20.82598,-78.97931,P. astreoides seawater,17,fore reef,26.74,806RB,sucrosephenol
+SRR6380097,Cuba_101,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.82598 N 78.97931 W,20.82598,-78.97931,P. astreoides seawater,17,fore reef,26.74,806RB,sucrosephenol
+SRR6380089,Cuba_7,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.82598 N 78.97931 W,20.82598,-78.97931,O. faveolata seawater,17,fore reef,26.74,806RB,sucrosephenol
+SRR6380090,Cuba_8,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.82598 N 78.97931 W,20.82598,-78.97931,O. faveolata seawater,17,fore reef,26.74,806RB,sucrosephenol
+SRR6380034,Cuba_9,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.82598 N 78.97931 W,20.82598,-78.97931,O. faveolata seawater,17,fore reef,26.74,806RB,sucrosephenol
+SRR6380028,Cuba_93,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.82598 N 78.97931 W,20.82598,-78.97931,P. astreoides seawater,17,fore reef,26.74,806RB,sucrosephenol
+SRR6380051,Cuba_94,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.82598 N 78.97931 W,20.82598,-78.97931,benthic seawater,17,fore reef,26.74,806RB,sucrosephenol
+SRR6380059,Cuba_98,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.82598 N 78.97931 W,20.82598,-78.97931,P. astreoides seawater,17,fore reef,26.74,806RB,sucrosephenol
+SRR6380060,Cuba_99,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.82598 N 78.97931 W,20.82598,-78.97931,P. astreoides seawater,17,fore reef,26.74,806RB,sucrosephenol
+SRR6380035,Cuba_11,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.877649 N 78.97028 W,20.877649,-78.97028,O. faveolata seawater,1.5,back reef,24.68,806RB,sucrosephenol
+SRR6380075,Cuba_12,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,20.877649 N 78.97028 W,20.877649,-78.97028,P. strigosa seawater,1.5,back reef,24.68,806RB,sucrosephenol
+SRR6380104,Cuba_102,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.092318 N 78.73354 W,21.092318,-78.73354,P. astreoides seawater,1.3,back reef,24.91,806RB,sucrosephenol
+SRR6380103,Cuba_103,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.092318 N 78.73354 W,21.092318,-78.73354,P. astreoides seawater,1.3,back reef,24.91,806RB,sucrosephenol
+SRR6380102,Cuba_104,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.092318 N 78.73354 W,21.092318,-78.73354,P. astreoides seawater,1.3,back reef,24.91,806RB,sucrosephenol
+SRR6380101,Cuba_105,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.092318 N 78.73354 W,21.092318,-78.73354,P. astreoides seawater,1.3,back reef,24.91,806RB,sucrosephenol
+SRR6380095,Cuba_107,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.092318 N 78.73354 W,21.092318,-78.73354,benthic seawater,1.3,back reef,24.91,806RB,sucrosephenol
+SRR6380094,Cuba_108,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.092318 N 78.73354 W,21.092318,-78.73354,P. astreoides seawater,1.3,back reef,24.91,806RB,sucrosephenol
+SRR6380036,Cuba_109,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.092318 N 78.73354 W,21.092318,-78.73354,P. astreoides seawater,1.3,back reef,24.91,806RB,sucrosephenol
+SRR6380045,Cuba_13,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.092318 N 78.73354 W,21.092318,-78.73354,P. astreoides seawater,1.3,back reef,24.91,806RB,sucrosephenol
+SRR6380049,Cuba_14,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.092318 N 78.73354 W,21.092318,-78.73354,benthic seawater,1.3,back reef,24.91,806RB,sucrosephenol
+SRR6380038,Cuba_110,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.10845 N 78.72080 W,21.10845,-78.7208,benthic seawater,0.75,back reef,24.12,806RB,sucrosephenol
+SRR6380037,Cuba_111,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.10845 N 78.72080 W,21.10845,-78.7208,benthic seawater,0.75,back reef,24.12,806RB,sucrosephenol
+SRR6380040,Cuba_112,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.10845 N 78.72080 W,21.10845,-78.7208,surface seawater,0.75,back reef,24.12,806RB,sucrosephenol
+SRR6380039,Cuba_113,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.10845 N 78.72080 W,21.10845,-78.7208,surface seawater,0.75,back reef,24.12,806RB,sucrosephenol
+SRR6380042,Cuba_114,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.10845 N 78.72080 W,21.10845,-78.7208,surface seawater,0.75,back reef,24.12,806RB,sucrosephenol
+SRR6380041,Cuba_115,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.10845 N 78.72080 W,21.10845,-78.7208,benthic seawater,0.75,back reef,24.12,806RB,sucrosephenol
+SRR6380033,Cuba_116,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.10845 N 78.72080 W,21.10845,-78.7208,benthic seawater,0.75,back reef,24.12,806RB,sucrosephenol
+SRR6380032,Cuba_117,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.10845 N 78.72080 W,21.10845,-78.7208,benthic seawater,0.75,back reef,24.12,806RB,sucrosephenol
+SRR6380073,Cuba_118,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.10845 N 78.72080 W,21.10845,-78.7208,surface seawater,0.75,back reef,24.12,806RB,sucrosephenol
+SRR6380048,Cuba_15,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.10845 N 78.72080 W,21.10845,-78.7208,surface seawater,0.75,back reef,24.12,806RB,sucrosephenol
+SRR6380047,Cuba_16,Jardines de la Reina Archipelago,Cuba,2015-02-01,PRJNA517146,Weber et al 2020,21.10845 N 78.72080 W,21.10845,-78.7208,surface seawater,0.75,back reef,24.12,806RB,sucrosephenol
+SRR6380044,Cuba_130,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.55521 N 81.76323 W,21.55521,-81.76323,surface seawater,0,fore reef,28.07,806RB,sucrosephenol
+SRR6380043,Cuba_131,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.55521 N 81.76323 W,21.55521,-81.76323,benthic seawater,10,fore reef,28.08,806RB,sucrosephenol
+SRR6380050,Cuba_132,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.55521 N 81.76323 W,21.55521,-81.76323,surface seawater,0,fore reef,28.07,806RB,sucrosephenol
+SRR6380087,Cuba_61,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.55521 N 81.76323 W,21.55521,-81.76323,benthic seawater,10,fore reef,28.08,806RB,sucrosephenol
+SRR6380088,Cuba_63,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.55521 N 81.76323 W,21.55521,-81.76323,surface seawater,0,fore reef,28.07,806RB,sucrosephenol
+SRR6380096,Cuba_59,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.56272 N 81.76676 W,21.56272,-81.76676,benthic seawater,10,fore reef,28.08,806RB,sucrosephenol
+SRR6380092,Cuba_39,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.56855 N 81.63165 W,21.56855,-81.63165,benthic seawater,10,fore reef,28.08,806RB,sucrosephenol
+SRR6380093,Cuba_40,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.56855 N 81.63165 W,21.56855,-81.63165,benthic seawater,10,fore reef,28.08,806RB,sucrosephenol
+SRR6380063,Cuba_41,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.56855 N 81.63165 W,21.56855,-81.63165,benthic seawater,10,fore reef,28.08,806RB,sucrosephenol
+SRR6380085,Cuba_42,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.56855 N 81.63165 W,21.56855,-81.63165,benthic seawater,10,fore reef,28.08,806RB,sucrosephenol
+SRR6380070,Cuba_122,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.56893 N 81.63820 W,21.56893,-81.6382,surface seawater,0,fore reef,28.18,806RB,sucrosephenol
+SRR6380071,Cuba_124,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.56893 N 81.63820 W,21.56893,-81.6382,surface seawater,0,fore reef,28.18,806RB,sucrosephenol
+SRR6380077,Cuba_35,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.56893 N 81.63820 W,21.56893,-81.6382,surface seawater,0,fore reef,28.18,806RB,sucrosephenol
+SRR6380078,Cuba_36,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.56893 N 81.63820 W,21.56893,-81.6382,surface seawater,0,fore reef,28.18,806RB,sucrosephenol
+SRR6380091,Cuba_37,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.56893 N 81.63820 W,21.56893,-81.6382,benthic seawater,9,fore reef,27.85,806RB,sucrosephenol
+SRR6380062,Cuba_45,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.581583 N 81.59057 W,21.581583,-81.59057,surface seawater,0,fore reef,27.95,806RB,sucrosephenol
+SRR6380061,Cuba_46,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.581583 N 81.59057 W,21.581583,-81.59057,benthic seawater,15,fore reef,27.93,806RB,sucrosephenol
+SRR6380080,Cuba_32,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.58387 N 81.62795 W,21.58387,-81.62795,surface seawater,0,fore reef,27.94,806RB,sucrosephenol
+SRR6380074,Cuba_119,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.58408 N 81.62805 W,21.58408,-81.62805,surface seawater,15,fore reef,27.93,806RB,sucrosephenol
+SRR6380076,Cuba_120,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.58408 N 81.62805 W,21.58408,-81.62805,M. cavernosa seawater,3,reef crest,28.82,806RB,sucrosephenol
+SRR6380069,Cuba_121,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.58408 N 81.62805 W,21.58408,-81.62805,M. cavernosa seawater,3,reef crest,28.82,806RB,sucrosephenol
+SRR6380054,Cuba_17,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.58422 N 81.56530 W,21.58422,-81.5653,M. cavernosa seawater,7,fore reef,29.35,806RB,sucrosephenol
+SRR6380053,Cuba_18,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.58422 N 81.56530 W,21.58422,-81.5653,P. strigosa seawater,7,fore reef,29.35,806RB,sucrosephenol
+SRR6380072,Cuba_125,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.58462 N 81.59720 W,21.58462,-81.5972,P. strigosa seawater,4,reef crest,28.83,806RB,sucrosephenol
+SRR6380066,Cuba_126,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.58462 N 81.59720 W,21.58462,-81.5972,P. strigosa seawater,4,reef crest,28.83,806RB,sucrosephenol
+SRR6380067,Cuba_127,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.58462 N 81.59720 W,21.58462,-81.5972,benthic seawater,4,reef crest,28.83,806RB,sucrosephenol
+SRR6380046,Cuba_128,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.58462 N 81.59720 W,21.58462,-81.5972,P. astreoides seawater,4,reef crest,28.83,806RB,sucrosephenol
+SRR6380084,Cuba_23,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.58693 N 81.58308 W,21.58693,-81.58308,P. astreoides seawater,5,reef crest,29.41,806RB,sucrosephenol
+SRR6380081,Cuba_24,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.58693 N 81.58308 W,21.58693,-81.58308,P. astreoides seawater,5,reef crest,29.41,806RB,sucrosephenol
+SRR6380079,Cuba_30,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.58693 N 81.58308 W,21.58693,-81.58308,M. cavernosa seawater,5,reef crest,29.41,806RB,sucrosephenol
+SRR6380065,Cuba_54,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.59684 N 81.96867 W,21.59684,-81.96867,M. cavernosa seawater,1,back reef,26.82,806RB,sucrosephenol
+SRR6380056,Cuba_56,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.603 N 81.93300 W,21.603,-81.933,P. strigosa seawater,1,back reef,27.02,806RB,sucrosephenol
+SRR6380055,Cuba_57,Los Canarreos,Cuba,2015-04-01,PRJNA517146,Weber et al 2020,21.603 N 81.93300 W,21.603,-81.933,P. astreoides seawater,1,back reef,27.02,806RB,sucrosephenol
+6,FLK_6,FLA_001,USA: Florida Keys,2019-06-05,PRJNA742384,Becker et al 2021,24.47569 N 82.12265 W,24.47569,-82.12265,,11.8872,fore reef,,806RB,powerbiofilm
+8,FLK_8,FLA_001,USA: Florida Keys,2019-06-05,PRJNA742384,Becker et al 2021,24.47569 N 82.12265 W,24.47569,-82.12265,,11.8872,fore reef,,806RB,powerbiofilm
+5,FLK_5,FLA_003,USA: Florida Keys,2019-06-05,PRJNA742384,Becker et al 2021,24.46533 N 82.20256 W,24.46533,-82.20256,,10.0584,fore reef,28.153,806RB,powerbiofilm
+9,FLK_9,FLA_003,USA: Florida Keys,2019-06-05,PRJNA742384,Becker et al 2021,24.46533 N 82.20256 W,24.46533,-82.20256,,10.0584,fore reef,28.153,806RB,powerbiofilm
+10,FLK_10,FLA_005,USA: Florida Keys,2019-06-06,PRJNA742384,Becker et al 2021,24.663086 N 82.930989 W,24.663086,-82.930989,,17.6784,fore reef,,806RB,powerbiofilm
+29,FLK_29,FLA_005,USA: Florida Keys,2019-06-06,PRJNA742384,Becker et al 2021,24.663086 N 82.930989 W,24.663086,-82.930989,,17.6784,fore reef,,806RB,powerbiofilm
+29b,FLK_29b,FLA_005,USA: Florida Keys,2019-06-06,PRJNA742384,Becker et al 2021,24.663086 N 82.930989 W,24.663086,-82.930989,,17.6784,fore reef,,806RB,powerbiofilm
+7,FLK_7,FLA_007,USA: Florida Keys,2019-06-06,PRJNA742384,Becker et al 2021,24.62049 N 82.92308 W,24.62049,-82.92308,,11.5824,fore reef,28.835,806RB,powerbiofilm
+11,FLK_11,FLA_007,USA: Florida Keys,2019-06-06,PRJNA742384,Becker et al 2021,24.62049 N 82.92308 W,24.62049,-82.92308,,11.5824,fore reef,28.835,806RB,powerbiofilm
+70,FLK_70,FLA_013,USA: Florida Keys,2019-06-07,PRJNA742384,Becker et al 2021,24.724568 N 82.815068 W,24.724568,-82.815068,,19.2024,fore reef,28.455,806RB,powerbiofilm
+72,FLK_72,FLA_013,USA: Florida Keys,2019-06-07,PRJNA742384,Becker et al 2021,24.724568 N 82.815068 W,24.724568,-82.815068,,19.2024,fore reef,28.455,806RB,powerbiofilm
+71,FLK_71,FLA_015,USA: Florida Keys,2019-06-07,PRJNA742384,Becker et al 2021,24.722388 N 82.828323 W,24.722388,-82.828323,,17.9832,fore reef,28.697,806RB,powerbiofilm
+73,FLK_73,FLA_015,USA: Florida Keys,2019-06-07,PRJNA742384,Becker et al 2021,24.722388 N 82.828323 W,24.722388,-82.828323,,17.9832,fore reef,28.697,806RB,powerbiofilm
+97,FLK_97,FLA_018,USA: Florida Keys,2019-06-08,PRJNA742384,Becker et al 2021,24.45916 N 81.84403 W,24.45916,-81.84403,,6.7056,fore reef,29.16,806RB,powerbiofilm
+102,FLK_102,FLA_018,USA: Florida Keys,2019-06-08,PRJNA742384,Becker et al 2021,24.45916 N 81.84403 W,24.45916,-81.84403,,6.7056,fore reef,29.16,806RB,powerbiofilm
+87,FLK_87,FLA_019,USA: Florida Keys,2019-06-08,PRJNA742384,Becker et al 2021,24.4458 N 81.91766 W,24.4458,-81.91766,,13.4112,fore reef,28.407,806RB,powerbiofilm
+96,FLK_96,FLA_019,USA: Florida Keys,2019-06-08,PRJNA742384,Becker et al 2021,24.4458 N 81.91766 W,24.4458,-81.91766,,13.4112,fore reef,28.407,806RB,powerbiofilm
+86,FLK_86,FLA_021,USA: Florida Keys,2019-06-08,PRJNA742384,Becker et al 2021,24.45097 N 81.94603 W,24.45097,-81.94603,,12.192,fore reef,28.701,806RB,powerbiofilm
+92,FLK_92,FLA_021,USA: Florida Keys,2019-06-08,PRJNA742384,Becker et al 2021,24.45097 N 81.94603 W,24.45097,-81.94603,,12.192,fore reef,28.701,806RB,powerbiofilm
+131,FLK_131,FLA_025,USA: Florida Keys,2019-06-09,PRJNA742384,Becker et al 2021,24.5036 N 81.7677 W,24.5036,-81.7677,,7.62,fore reef,,806RB,powerbiofilm
+140,FLK_140,FLA_025,USA: Florida Keys,2019-06-09,PRJNA742384,Becker et al 2021,24.5036 N 81.7677 W,24.5036,-81.7677,,7.62,fore reef,,806RB,powerbiofilm
+130,FLK_130,FLA_027,USA: Florida Keys,2019-06-09,PRJNA742384,Becker et al 2021,24.5014 N 81.679 W,24.5014,-81.679,,7.9248,fore reef,28.913,806RB,powerbiofilm
+142,FLK_142,FLA_027,USA: Florida Keys,2019-06-09,PRJNA742384,Becker et al 2021,24.5014 N 81.679 W,24.5014,-81.679,,7.9248,fore reef,28.913,806RB,powerbiofilm
+130b,FLK_130b,FLA_027,USA: Florida Keys,2019-06-09,PRJNA742384,Becker et al 2021,24.5014 N 81.679 W,24.5014,-81.679,,7.9248,fore reef,28.913,806RB,powerbiofilm
+163,FLK_163,FLA_031,USA: Florida Keys,2019-06-10,PRJNA742384,Becker et al 2021,24.56036 N 81.50213 W,24.56036,-81.50213,,7.9248,fore reef,29.704,806RB,powerbiofilm
+169,FLK_169,FLA_031,USA: Florida Keys,2019-06-10,PRJNA742384,Becker et al 2021,24.56036 N 81.50213 W,24.56036,-81.50213,,7.9248,fore reef,29.704,806RB,powerbiofilm
+164,FLK_164,FLA_033,USA: Florida Keys,2019-06-10,PRJNA742384,Becker et al 2021,24.58477 N 81.49695 W,24.58477,-81.49695,,8.5344,fore reef,29.867,806RB,powerbiofilm
+170,FLK_170,FLA_033,USA: Florida Keys,2019-06-10,PRJNA742384,Becker et al 2021,24.58477 N 81.49695 W,24.58477,-81.49695,,8.5344,fore reef,29.867,806RB,powerbiofilm
+204,FLK_204,FLA_037,USA: Florida Keys,2019-06-11,PRJNA742384,Becker et al 2021,24.6993 N 80.96684 W,24.6993,-80.96684,,7.3152,fore reef,30.389,806RB,powerbiofilm
+213,FLK_213,FLA_037,USA: Florida Keys,2019-06-11,PRJNA742384,Becker et al 2021,24.6993 N 80.96684 W,24.6993,-80.96684,,7.3152,fore reef,30.389,806RB,powerbiofilm
+199,FLK_199,FLA_039,USA: Florida Keys,2019-06-11,PRJNA742384,Becker et al 2021,24.67155 N 81.05062 W,24.67155,-81.05062,,6.4008,fore reef,31.016,806RB,powerbiofilm
+212,FLK_212,FLA_039,USA: Florida Keys,2019-06-11,PRJNA742384,Becker et al 2021,24.67155 N 81.05062 W,24.67155,-81.05062,,6.4008,fore reef,31.016,806RB,powerbiofilm
+251,FLK_251,FLA_043,USA: Florida Keys,2019-06-13,PRJNA742384,Becker et al 2021,24.94652 N 80.55198 W,24.94652,-80.55198,,4.2672,fore reef,31.351,806RB,powerbiofilm
+255,FLK_255,FLA_043,USA: Florida Keys,2019-06-13,PRJNA742384,Becker et al 2021,24.94652 N 80.55198 W,24.94652,-80.55198,,4.2672,fore reef,31.351,806RB,powerbiofilm
+252,FLK_252,FLA_045,USA: Florida Keys,2019-06-13,PRJNA742384,Becker et al 2021,24.8977 N 80.617 W,24.8977,-80.617,,3.3528,fore reef,31.664,806RB,powerbiofilm
+256,FLK_256,FLA_045,USA: Florida Keys,2019-06-13,PRJNA742384,Becker et al 2021,24.8977 N 80.617 W,24.8977,-80.617,,3.3528,fore reef,31.664,806RB,powerbiofilm
+292,FLK_292,FLA_049,USA: Florida Keys,2019-06-14,PRJNA742384,Becker et al 2021,25.11012 N 80.30382 W,25.11012,-80.30382,,6.7056,fore reef,28.716,806RB,powerbiofilm
+302,FLK_302,FLA_049,USA: Florida Keys,2019-06-14,PRJNA742384,Becker et al 2021,25.11012 N 80.30382 W,25.11012,-80.30382,,6.7056,fore reef,28.716,806RB,powerbiofilm
+301,FLK_301,FLA_051,USA: Florida Keys,2019-06-14,PRJNA742384,Becker et al 2021,25.02194 N 80.4389 W,25.02194,-80.4389,,2.7432,fore reef,29.585,806RB,powerbiofilm
+305,FLK_305,FLA_051,USA: Florida Keys,2019-06-14,PRJNA742384,Becker et al 2021,25.02194 N 80.4389 W,25.02194,-80.4389,,2.7432,fore reef,29.585,806RB,powerbiofilm
+301b,FLK_301b,FLA_051,USA: Florida Keys,2019-06-14,PRJNA742384,Becker et al 2021,25.02194 N 80.4389 W,25.02194,-80.4389,,2.7432,fore reef,29.585,806RB,powerbiofilm
+330,FLK_330,FLA_057,USA: Florida Keys,2019-06-15,PRJNA742384,Becker et al 2021,24.57686 N 81.61335 W,24.57686,-81.61335,,4.572,fore reef,30.844,806RB,powerbiofilm
+332,FLK_332,FLA_057,USA: Florida Keys,2019-06-15,PRJNA742384,Becker et al 2021,24.57686 N 81.61335 W,24.57686,-81.61335,,4.572,fore reef,30.844,806RB,powerbiofilm
+325,FLK_325,FLA_059,USA: Florida Keys,2019-06-15,PRJNA742384,Becker et al 2021,24.50236 N 81.61343 W,24.50236,-81.61343,,12.4968,fore reef,29.271,806RB,powerbiofilm
+327,FLK_327,FLA_059,USA: Florida Keys,2019-06-15,PRJNA742384,Becker et al 2021,24.50236 N 81.61343 W,24.50236,-81.61343,,12.4968,fore reef,29.271,806RB,powerbiofilm
+374,FLK_374,FLA_065,USA: Florida Keys,2019-06-16,PRJNA742384,Becker et al 2021,25.22259 N 80.20981 W,25.22259,-80.20981,,7.0104,fore reef,28.958,806RB,powerbiofilm
+376,FLK_376,FLA_065,USA: Florida Keys,2019-06-16,PRJNA742384,Becker et al 2021,25.22259 N 80.20981 W,25.22259,-80.20981,,7.0104,fore reef,28.958,806RB,powerbiofilm
+373,FLK_373,FLA_067,USA: Florida Keys,2019-06-16,PRJNA742384,Becker et al 2021,25.31832 N 80.18423 W,25.31832,-80.18423,,6.096,fore reef,,806RB,powerbiofilm
+377,FLK_377,FLA_067,USA: Florida Keys,2019-06-16,PRJNA742384,Becker et al 2021,25.31832 N 80.18423 W,25.31832,-80.18423,,6.096,fore reef,,806RB,powerbiofilm
+341,FLK_341,FLA_073,USA: Florida Keys,2019-06-17,PRJNA742384,Becker et al 2021,25.38634 N 80.16294 W,25.38634,-80.16294,,5.1816,fore reef,28.716,806RB,powerbiofilm
+352,FLK_352,FLA_073,USA: Florida Keys,2019-06-17,PRJNA742384,Becker et al 2021,25.38634 N 80.16294 W,25.38634,-80.16294,,5.1816,fore reef,28.716,806RB,powerbiofilm
+353,FLK_353,FLA_075,USA: Florida Keys,2019-06-17,PRJNA742384,Becker et al 2021,25.3102 N 80.21854 W,25.3102,-80.21854,,5.1816,fore reef,29.292,806RB,powerbiofilm
+367,FLK_367,FLA_075,USA: Florida Keys,2019-06-17,PRJNA742384,Becker et al 2021,25.3102 N 80.21854 W,25.3102,-80.21854,,5.1816,fore reef,29.292,806RB,powerbiofilm
+383,FLK_383,FLA_077,USA: Florida Keys,2019-06-18,PRJNA742384,Becker et al 2021,24.61098 N 81.17352 W,24.61098,-81.17352,,8.8392,fore reef,28.87,806RB,powerbiofilm
+385,FLK_385,FLA_077,USA: Florida Keys,2019-06-18,PRJNA742384,Becker et al 2021,24.61098 N 81.17352 W,24.61098,-81.17352,,8.8392,fore reef,28.87,806RB,powerbiofilm
+389,FLK_389,FLA_079,USA: Florida Keys,2019-06-18,PRJNA742384,Becker et al 2021,24.63808 N 81.06404 W,24.63808,-81.06404,,13.1064,fore reef,28.924,806RB,powerbiofilm
+392,FLK_392,FLA_079,USA: Florida Keys,2019-06-18,PRJNA742384,Becker et al 2021,24.63808 N 81.06404 W,24.63808,-81.06404,,13.1064,fore reef,28.924,806RB,powerbiofilm

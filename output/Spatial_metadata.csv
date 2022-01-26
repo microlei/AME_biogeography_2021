@@ -1,0 +1,194 @@
+﻿,sample,Run,site,reef_system,transect,distance,coral,sand,Sample_or_Control,depth,substrate_desc,substrate class,DAPI,pcr_group,lat,lon
+FLA_12_Run1,FLA_12,Run1,FLA_015,FLA,1,3,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_15_Run2,FLA_15,Run2,FLA_015,FLA,3,8,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_263_Run2,FLA_263,Run2,FLA_049,FLA,3,7,no,yes,Sample,NA,sand,,NA,,25.11012,-80.30382
+FLA_264_Run1,FLA_264,Run1,FLA_049,FLA,3,10,no,yes,Sample,NA,algae and sand,,NA,,25.11012,-80.30382
+FLA_267_Run1,FLA_267,Run1,FLA_049,FLA,1,4,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_267_Run2,FLA_267,Run2,FLA_049,FLA,1,4,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_268_Run1,FLA_268,Run1,FLA_049,FLA,1,10,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_269_Run1,FLA_269,Run1,FLA_049,FLA,2,10,yes,no,Sample,NA,coral,,NA,,25.11012,-80.30382
+FLA_272_Run1,FLA_272,Run1,FLA_049,FLA,2,4,no,yes,Sample,NA,sand,,NA,,25.11012,-80.30382
+FLA_273_Run1,FLA_273,Run1,FLA_049,FLA,3,2,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_274_Run2,FLA_274,Run2,FLA_049,FLA,3,1,yes,no,Sample,NA,spong and soft coral,,NA,,25.11012,-80.30382
+FLA_275_Run2,FLA_275,Run2,FLA_049,FLA,2,7,yes,no,Sample,NA,soft coral,,NA,,25.11012,-80.30382
+FLA_278_Run2,FLA_278,Run2,FLA_049,FLA,1,7,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_279_Run1,FLA_279,Run1,FLA_049,FLA,2,8,no,yes,Sample,NA,sand,,NA,,25.11012,-80.30382
+FLA_279_Run2,FLA_279,Run2,FLA_049,FLA,2,8,no,yes,Sample,NA,sand,,NA,,25.11012,-80.30382
+FLA_280_Run1,FLA_280,Run1,FLA_049,FLA,2,3,no,yes,Sample,NA,sand,,NA,,25.11012,-80.30382
+FLA_281_Run1,FLA_281,Run1,FLA_049,FLA,1,9,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_282_Run1,FLA_282,Run1,FLA_049,FLA,3,9,no,yes,Sample,NA,algae and sand,,NA,,25.11012,-80.30382
+FLA_283_Run2,FLA_283,Run2,FLA_049,FLA,2,2,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_284_Run2,FLA_284,Run2,FLA_049,FLA,3,5,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_284-N715_Run2,FLA_284-N715,Run2,FLA_049,FLA,3,5,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_285_Run1,FLA_285,Run1,FLA_049,FLA,1,2,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_286_Run2,FLA_286,Run2,FLA_049,FLA,2,6,yes,no,Sample,NA,soft coral,,NA,,25.11012,-80.30382
+FLA_287_Run2,FLA_287,Run2,FLA_049,FLA,1,3,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_289_Run1,FLA_289,Run1,FLA_049,FLA,2,9,no,yes,Sample,NA,sand,,NA,,25.11012,-80.30382
+FLA_290_Run2,FLA_290,Run2,FLA_049,FLA,2,5,no,yes,Sample,NA,sand,,NA,,25.11012,-80.30382
+FLA_291_Run2,FLA_291,Run2,FLA_049,FLA,3,4,yes,no,Sample,NA,stephanocoenia,,NA,,25.11012,-80.30382
+FLA_293_Run1,FLA_293,Run1,FLA_049,FLA,3,6,no,yes,Sample,NA,sand,,NA,,25.11012,-80.30382
+FLA_293_Run2,FLA_293,Run2,FLA_049,FLA,3,6,no,yes,Sample,NA,sand,,NA,,25.11012,-80.30382
+FLA_294_Run1,FLA_294,Run1,FLA_049,FLA,1,1,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_295_Run1,FLA_295,Run1,FLA_049,FLA,2,1,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_296_Run2,FLA_296,Run2,FLA_049,FLA,3,3,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_297_Run1,FLA_297,Run1,FLA_049,FLA,3,8,no,no,Sample,NA,algae,,NA,,25.11012,-80.30382
+FLA_298_Run1,FLA_298,Run1,FLA_049,FLA,1,5,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_299_Run2,FLA_299,Run2,FLA_049,FLA,1,8,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_299-N715_Run2,FLA_299-N715,Run2,FLA_049,FLA,1,8,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_300_Run2,FLA_300,Run2,FLA_049,FLA,1,6,,,Sample,NA,,,NA,,25.11012,-80.30382
+FLA_342_Run2,FLA_342,Run2,FLA_073,FLA,1,6,,,Sample,NA,,,NA,,25.38634,-80.16294
+FLA_343_Run2,FLA_343,Run2,FLA_073,FLA,1,4,no,no,Sample,NA,dead OANN and macroalgae,,NA,,25.38634,-80.16294
+FLA_344_Run1,FLA_344,Run1,FLA_073,FLA,1,7,no,yes,Sample,NA,sand,,NA,,25.38634,-80.16294
+FLA_344_Run2,FLA_344,Run2,FLA_073,FLA,1,7,no,yes,Sample,NA,sand,,NA,,25.38634,-80.16294
+FLA_345_Run1,FLA_345,Run1,FLA_073,FLA,1,5,no,no,Sample,NA,dead OANN and macroalgae,,NA,,25.38634,-80.16294
+FLA_346_Run2,FLA_346,Run2,FLA_073,FLA,1,8,no,yes,Sample,NA,sand,,NA,,25.38634,-80.16294
+FLA_347_Run1,FLA_347,Run1,FLA_073,FLA,1,3,no,no,Sample,NA,macroalgae,,NA,,25.38634,-80.16294
+FLA_348_Run1,FLA_348,Run1,FLA_073,FLA,1,9,no,no,Sample,NA,pavement,,NA,,25.38634,-80.16294
+FLA_348_Run2,FLA_348,Run2,FLA_073,FLA,1,9,no,no,Sample,NA,pavement,,NA,,25.38634,-80.16294
+FLA_349_Run2,FLA_349,Run2,FLA_073,FLA,1,2,,,Sample,NA,,,NA,,25.38634,-80.16294
+FLA_350_Run1,FLA_350,Run1,FLA_073,FLA,1,10,no,no,Sample,NA,macroalgae and rock,,NA,,25.38634,-80.16294
+FLA_351_Run1,FLA_351,Run1,FLA_073,FLA,1,1,no,no,Sample,NA,rock,,NA,,25.38634,-80.16294
+FLA_351_Run2,FLA_351,Run2,FLA_073,FLA,1,1,no,no,Sample,NA,rock,,NA,,25.38634,-80.16294
+FLA_38_Run2,FLA_38,Run2,FLA_015,FLA,1,11,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_39_Run2,FLA_39,Run2,FLA_015,FLA,3,9,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_40_Run2,FLA_40,Run2,FLA_015,FLA,3,3,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_41_Run1,FLA_41,Run1,FLA_015,FLA,1,6,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_42_Run1,FLA_42,Run1,FLA_015,FLA,3,6,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_43_Run1,FLA_43,Run1,FLA_015,FLA,1,5,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_44_Run2,FLA_44,Run2,FLA_015,FLA,3,10,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_45_Run1,FLA_45,Run1,FLA_015,FLA,2,4,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_45_Run2,FLA_45,Run2,FLA_015,FLA,2,4,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_46_Run2,FLA_46,Run2,FLA_015,FLA,2,9,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_47_Run1,FLA_47,Run1,FLA_015,FLA,1,2,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_48_Run1,FLA_48,Run1,FLA_015,FLA,2,6,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_48_Run2,FLA_48,Run2,FLA_015,FLA,2,6,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_49_Run1,FLA_49,Run1,FLA_015,FLA,1,9,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_50_Run2,FLA_50,Run2,FLA_015,FLA,1,10,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_51_Run2,FLA_51,Run2,FLA_015,FLA,3,7,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_52_Run1,FLA_52,Run1,FLA_015,FLA,1,4,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_53_Run1,FLA_53,Run1,FLA_015,FLA,2,5,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_54_Run1,FLA_54,Run1,FLA_015,FLA,3,5,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_54-N715_Run2,FLA_54-N715,Run2,FLA_015,FLA,3,5,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_55_Run2,FLA_55,Run2,FLA_015,FLA,3,1,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_56_Run1,FLA_56,Run1,FLA_015,FLA,1,7,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_57_Run2,FLA_57,Run2,FLA_015,FLA,2,1,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_58_Run1,FLA_58,Run1,FLA_015,FLA,1,8,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_59_Run1,FLA_59,Run1,FLA_015,FLA,3,10,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_60_Run1,FLA_60,Run1,FLA_015,FLA,2,8,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_60_Run2,FLA_60,Run2,FLA_015,FLA,2,8,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_61_Run1,FLA_61,Run1,FLA_015,FLA,3,4,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_62_Run2,FLA_62,Run2,FLA_015,FLA,2,3,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_64_Run2,FLA_64,Run2,FLA_015,FLA,2,2,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_65_Run2,FLA_65,Run2,FLA_015,FLA,3,2,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_65-N715_Run2,FLA_65-N715,Run2,FLA_015,FLA,3,2,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_67_Run2,FLA_67,Run2,FLA_015,FLA,2,7,,,Sample,NA,,,NA,,24.722388,-82.828323
+FLA_neg-blank-911_Run2,FLA_neg-blank-911,Run2,controls,,NA,NA,,,Control,NA,,,NA,,,
+FLA_neg-blank-95_Run2,FLA_neg-blank-95,Run2,controls,,NA,NA,,,Control,NA,,,NA,,,
+FLA_neg-filt-9-11_Run1,FLA_neg-filt-9-11,Run1,controls,,NA,NA,,,Control,NA,,,NA,,,
+FLA_neg-filt-9-5_Run1,FLA_neg-filt-9-5,Run1,controls,,NA,NA,,,Control,NA,,,NA,,,
+FLA_neg-filt-911_Run2,FLA_neg-filt-911,Run2,controls,,NA,NA,,,Control,NA,,,NA,,,
+FLA_neg-filt-95_Run2,FLA_neg-filt-95,Run2,controls,,NA,NA,,,Control,NA,,,NA,,,
+FLA_PCR1-N715_Run2,FLA_PCR1-N715,Run2,controls,,NA,NA,,,Control,NA,,,NA,,,
+FLA_PCR2-N715_Run2,FLA_PCR2-N715,Run2,controls,,NA,NA,,,Control,NA,,,NA,,,
+FLA_pos-mock_Run1,FLA_pos-mock,Run1,controls,,NA,NA,,,Control,NA,,,NA,,,
+FLA_pos-mock_Run2,FLA_pos-mock,Run2,controls,,NA,NA,,,Control,NA,,,NA,,,
+FLA_Undetermined_Run1,FLA_Undetermined,Run1,controls,,NA,NA,,,Control,NA,,,NA,,,
+FLA_Undetermined_Run2,FLA_Undetermined,Run2,controls,,NA,NA,,,Control,NA,,,NA,,,
+STT_1_Run3,STT_1,Run3,Flat Cay,STT,2,4,,,Sample,NA,Millepora (fire coral),Live coral,18,A,18.316767,-64.987961
+STT_10_Run3,STT_10,Run3,Brewer's Bay,STT,2,9,,,Sample,5.5,algae halimeda,Algae,5,A,18.343027,-64.980451
+STT_101_Run4,STT_101,Run4,controls,STT,NA,NA,,,Control,NA,,,NA,A,,
+STT_102_Run4,STT_102,Run4,controls,STT,NA,NA,,,Control,NA,,,NA,A,,
+STT_103_Run3,STT_103,Run3,controls,STT,NA,NA,,,Control,NA,,,NA,A,,
+STT_104_Run4,STT_104,Run4,controls,STT,NA,NA,,,Control,NA,,,NA,A,,
+STT_105_Run4,STT_105,Run4,controls,STT,NA,NA,,,Control,NA,,,NA,B,,
+STT_106_Run3,STT_106,Run3,controls,STT,NA,NA,,,Control,NA,,,NA,B,,
+STT_11_Run4,STT_11,Run4,Brewer's Bay,STT,1,8,,,Sample,6.9,OANN,Live coral,38,A,18.343027,-64.980451
+STT_12_Run4,STT_12,Run4,Black Point,STT,3,9,,,Sample,5.5,sponge + macroalgae,Algae,71,A,18.344616,-64.98603
+STT_13_Run4,STT_13,Run4,Black Point,STT,3,10,,,Sample,6,P. astroides + sand,Live coral,68,A,18.344616,-64.98603
+STT_14_Run4,STT_14,Run4,Black Point,STT,1,6,,,Sample,8.4,macroalgae,Algae,124,A,18.344616,-64.98603
+STT_15_Run4,STT_15,Run4,Black Point,STT,2,9,,,Sample,7.6,macroalgae + soft coral,Algae,127,A,18.344616,-64.98603
+STT_16_Run4,STT_16,Run4,Black Point,STT,2,6,,,Sample,7.8,CNAT,Live coral,49,A,18.344616,-64.98603
+STT_17_Run4,STT_17,Run4,Brewer's Bay,STT,3,5,,,Sample,4.8,dead orbicella,Dead coral,42,A,18.343027,-64.980451
+STT_18_Run4,STT_18,Run4,Black Point,STT,1,2,,,Sample,7.3,S. sideria,Live coral,56,A,18.344616,-64.98603
+STT_19_Run4,STT_19,Run4,Flat Cay,STT,2,2,,,Sample,NA,Unknown,Unknown,12,A,18.316767,-64.987961
+STT_2_Run3,STT_2,Run3,Black Point,STT,2,10,,,Sample,7.6,soft coral?,Algae,128,A,18.344616,-64.98603
+STT_20_Run3,STT_20,Run3,Flat Cay,STT,1,1,,,Sample,6.1,OFAV,Live coral,14,A,18.316767,-64.987961
+STT_21_Run4,STT_21,Run4,Flat Cay,STT,2,7,,,Sample,NA,?,Dead coral,21,A,18.316767,-64.987961
+STT_22_Run3,STT_22,Run3,Flat Cay,STT,2,1,,,Sample,7.6,dead coral macroalgae,Algae,16,A,18.316767,-64.987961
+STT_23_Run4,STT_23,Run4,Black Point,STT,1,4,,,Sample,7.9,macroalgae,Algae,62,A,18.344616,-64.98603
+STT_24_Run4,STT_24,Run4,Brewer's Bay,STT,3,9,,,Sample,5.4,algae halimeda,Algae,41,A,18.343027,-64.980451
+STT_25_Run3,STT_25,Run3,Black Point,STT,1,8,,,Sample,8.9,green sponge,Sponge,73,A,18.344616,-64.98603
+STT_26_Run4,STT_26,Run4,Black Point,STT,2,4,,,Sample,7.6,cyanobacteria or macroalgae,Algae,125,A,18.344616,-64.98603
+STT_27_Run3,STT_27,Run3,Flat Cay,STT,1,4,,,Sample,5.9,dead orbicella,Dead coral,10,A,18.316767,-64.987961
+STT_28_Run3,STT_28,Run3,Black Point,STT,3,2,,,Sample,6.3,rock,Rock,72,A,18.344616,-64.98603
+STT_29_Run4,STT_29,Run4,Flat Cay,STT,2,8,,,Sample,NA,Porites astreoides,Live coral,3,A,18.316767,-64.987961
+STT_3_Run3,STT_3,Run3,Flat Cay,STT,2,5,,,Sample,NA,coral (OFAV?),Live coral,6,A,18.316767,-64.987961
+STT_30_Run3,STT_30,Run3,Black Point,STT,3,8,,,Sample,5.2,CNAT,Live coral,69,A,18.344616,-64.98603
+STT_31_Run4,STT_31,Run4,Black Point,STT,2,3,,,Sample,7.7,P. astroides,Live coral,90,A,18.344616,-64.98603
+STT_32_Run3,STT_32,Run3,Brewer's Bay,STT,2,3,,,Sample,5.7,OFRA + macroalgae,Live coral,29,A,18.343027,-64.980451
+STT_33_Run4,STT_33,Run4,Brewer's Bay,STT,1,9,,,Sample,7,agaricia,Dead coral,30,A,18.343027,-64.980451
+STT_34_Run4,STT_34,Run4,Flat Cay,STT,1,5,,,Sample,5.9,S. sideria,Live coral,119,A,18.316767,-64.987961
+STT_35_Run4,STT_35,Run4,Brewer's Bay,STT,1,6,,,Sample,6.9,OFRA,Live coral,43,A,18.343027,-64.980451
+STT_36_Run3,STT_36,Run3,Flat Cay,STT,2,3,,,Sample,NA,Acropora cervicornis,Live coral,8,A,18.316767,-64.987961
+STT_37_Run4,STT_37,Run4,Brewer's Bay,STT,1,4,,,Sample,6.9,OANN,Live coral,31,A,18.343027,-64.980451
+STT_38_Run3,STT_38,Run3,Flat Cay,STT,3,2,,,Sample,8,rock + macroalgae,Rock,1,A,18.316767,-64.987961
+STT_39_Run3,STT_39,Run3,Brewer's Bay,STT,3,10,,,Sample,5.3,P. astroides,Live coral,47,A,18.343027,-64.980451
+STT_4_Run4,STT_4,Run4,Flat Cay,STT,2,10,,,Sample,5.8,Orbicella,Live coral,19,A,18.316767,-64.987961
+STT_40_Run3,STT_40,Run3,Flat Cay,STT,1,10,,,Sample,6.4,dead DCYL + agaricia,Dead coral,4,A,18.316767,-64.987961
+STT_41_Run4,STT_41,Run4,Flat Cay,STT,3,7,,,Sample,8.4,agaricia with bleach or disease,Live coral,55,A,18.316767,-64.987961
+STT_42_Run4,STT_42,Run4,Black Point,STT,3,7,,,Sample,5.4,Porites,Live coral,85,A,18.344616,-64.98603
+STT_43_Run3,STT_43,Run3,Brewer's Bay,STT,2,6,,,Sample,5.9,sponge,Sponge,28,A,18.343027,-64.980451
+STT_44_Run4,STT_44,Run4,Black Point,STT,3,1,,,Sample,6,rock,Rock,74,B,18.344616,-64.98603
+STT_45_Run3,STT_45,Run3,Black Point,STT,1,10,,,Sample,9.9,rock + macroalgae,Rock,67,B,18.344616,-64.98603
+STT_46_Run4,STT_46,Run4,Black Point,STT,3,3,,,Sample,6,rock + algae,Rock,70,B,18.344616,-64.98603
+STT_47_Run4,STT_47,Run4,Flat Cay,STT,1,2,,,Sample,5.9,Millepora (fire coral),Live coral,54,B,18.316767,-64.987961
+STT_48_Run4,STT_48,Run4,Brewer's Bay,STT,3,8,,,Sample,5.1,OFRA,Live coral,46,B,18.343027,-64.980451
+STT_49_Run3,STT_49,Run3,Brewer's Bay,STT,1,5,,,Sample,7,rock + macroalgae,Algae,35,B,18.343027,-64.980451
+STT_5_Run4,STT_5,Run4,Flat Cay,STT,3,1,,,Sample,8.2,Millepora (fire coral),Live coral,24,A,18.316767,-64.987961
+STT_50_Run3,STT_50,Run3,Brewer's Bay,STT,2,2,,,Sample,5.7,sponge + macroalgae,Algae,61,B,18.343027,-64.980451
+STT_51_Run3,STT_51,Run3,Brewer's Bay,STT,1,3,,,Sample,6.9,OANN paled,Live coral,36,B,18.343027,-64.980451
+STT_52_Run4,STT_52,Run4,Flat Cay,STT,2,6,,,Sample,NA,dead coral/rock,Rock,11,B,18.316767,-64.987961
+STT_53_Run4,STT_53,Run4,Black Point,STT,3,4,,,Sample,6,rock,Algae,66,B,18.344616,-64.98603
+STT_54_Run3,STT_54,Run3,Brewer's Bay,STT,3,3,,,Sample,5.2,algae,Algae,40,B,18.343027,-64.980451
+STT_55_Run4,STT_55,Run4,Black Point,STT,2,1,,,Sample,7.2,cyanobacteria + sand,Sand,121,B,18.344616,-64.98603
+STT_56_Run3,STT_56,Run3,Brewer's Bay,STT,2,5,,,Sample,5.8,orbicella,Live coral,58,B,18.343027,-64.980451
+STT_57_Run3,STT_57,Run3,Flat Cay,STT,3,10,,,Sample,8,rock,Rock,89,B,18.316767,-64.987961
+STT_58_Run3,STT_58,Run3,Flat Cay,STT,3,3,,,Sample,8,cyanobacteria + sand,Sand,15,B,18.316767,-64.987961
+STT_59_Run3,STT_59,Run3,Brewer's Bay,STT,2,8,,,Sample,5.7,algae halimeda,Algae,25,B,18.343027,-64.980451
+STT_6_Run4,STT_6,Run4,Brewer's Bay,STT,2,10,,,Sample,5.5,dead OANN,Dead coral,26,A,18.343027,-64.980451
+STT_60_Run3,STT_60,Run3,Brewer's Bay,STT,3,4,,,Sample,4.8,OANN,Live coral,45,B,18.343027,-64.980451
+STT_61_Run3,STT_61,Run3,Black Point,STT,2,8,,,Sample,7.6,P. astroides,Live coral,126,B,18.344616,-64.98603
+STT_62_Run3,STT_62,Run3,Flat Cay,STT,3,9,,,Sample,8,rock + algae,Rock,51,B,18.316767,-64.987961
+STT_63_Run3,STT_63,Run3,Flat Cay,STT,3,5,,,Sample,8.4,rock,Rock,23,B,18.316767,-64.987961
+STT_64_Run3,STT_64,Run3,Black Point,STT,2,5,,,Sample,7.4,macroalgae,Algae,122,B,18.344616,-64.98603
+STT_65_Run4,STT_65,Run4,Black Point,STT,2,7,,,Sample,7.9,rock / sand,Sand,48,B,18.344616,-64.98603
+STT_66_Run4,STT_66,Run4,Flat Cay,STT,1,6,,,Sample,5.9,rock,Rock,88,B,18.316767,-64.987961
+STT_67_Run4,STT_67,Run4,Brewer's Bay,STT,3,2,,,Sample,5.2,P. porites?,Dead coral,44,B,18.343027,-64.980451
+STT_68_Run4,STT_68,Run4,Flat Cay,STT,1,8,,,Sample,6.4,live coral,Live coral,53,B,18.316767,-64.987961
+STT_69_Run4,STT_69,Run4,Flat Cay,STT,1,3,,,Sample,5.9,Dead coral,Dead coral,7,B,18.316767,-64.987961
+STT_7_Run4,STT_7,Run4,Brewer's Bay,STT,3,7,,,Sample,5.1,purple corraline algae?,Algae,39,A,18.343027,-64.980451
+STT_70_Run3,STT_70,Run3,Flat Cay,STT,3,4,,,Sample,8.4,rock,Rock,118,B,18.316767,-64.987961
+STT_71_Run4,STT_71,Run4,Black Point,STT,3,5,,,Sample,6,OFRA,Live coral,116,B,18.344616,-64.98603
+STT_72_Run4,STT_72,Run4,Black Point,STT,1,3,,,Sample,0.6,macroalgae,Algae,117,B,18.344616,-64.98603
+STT_73_Run3,STT_73,Run3,Black Point,STT,3,6,,,Sample,5.5,coral/MA/rock?,Algae,120,B,18.344616,-64.98603
+STT_74_Run3,STT_74,Run3,Brewer's Bay,STT,2,7,,,Sample,5.7,macroalgae,Algae,57,B,18.343027,-64.980451
+STT_75_Run3,STT_75,Run3,Black Point,STT,1,5,,,Sample,8.3,dead coral macroalgae,Algae,64,B,18.344616,-64.98603
+STT_76_Run3,STT_76,Run3,Black Point,STT,2,2,,,Sample,7.6,sand,Sand,123,B,18.344616,-64.98603
+STT_77_Run3,STT_77,Run3,Flat Cay,STT,3,8,,,Sample,8.3,porites + crustose coraline algae + rock,Live coral,2,B,18.316767,-64.987961
+STT_78_Run3,STT_78,Run3,Flat Cay,STT,2,9,,,Sample,NA,OANN,Live coral,22,B,18.316767,-64.987961
+STT_79_Run4,STT_79,Run4,Brewer's Bay,STT,1,2,,,Sample,7,sand + macroalgae,Sand,32,B,18.343027,-64.980451
+STT_8_Run3,STT_8,Run3,Brewer's Bay,STT,2,1,,,Sample,5.7,OFRA,Live coral,13,A,18.343027,-64.980451
+STT_80_Run3,STT_80,Run3,Brewer's Bay,STT,2,4,,,Sample,5.7,macroalgae,Algae,27,B,18.343027,-64.980451
+STT_81_Run3,STT_81,Run3,Brewer's Bay,STT,3,1,,,Sample,5.5,rubble,Rock,33,B,18.343027,-64.980451
+STT_82_Run3,STT_82,Run3,Black Point,STT,1,7,,,Sample,8.7,P. porites,Live coral,86,B,18.344616,-64.98603
+STT_83_Run4,STT_83,Run4,Brewer's Bay,STT,1,1,,,Sample,7,MCAV,Live coral,34,B,18.343027,-64.980451
+STT_84_Run3,STT_84,Run3,Brewer's Bay,STT,1,7,,,Sample,6.9,macroalgae,Algae,37,B,18.343027,-64.980451
+STT_85_Run4,STT_85,Run4,Flat Cay,STT,1,7,,,Sample,6.3,rubble,Rock,50,B,18.316767,-64.987961
+STT_86_Run3,STT_86,Run3,Flat Cay,STT,3,6,,,Sample,8.4,macroalgae,Algae,87,B,18.316767,-64.987961
+STT_87_Run3,STT_87,Run3,Flat Cay,STT,1,9,,,Sample,6.4,rock/pavement,Rock,17,B,18.316767,-64.987961
+STT_88_Run3,STT_88,Run3,Black Point,STT,1,1,,,Sample,7,OANN paled,Live coral,63,B,18.344616,-64.98603
+STT_9_Run3,STT_9,Run3,Black Point,STT,1,9,,,Sample,9.1,macroalgae,Algae,65,A,18.344616,-64.98603
+STT_mock_Run4,STT_mock,Run4,controls,,NA,NA,,,Control,NA,,,NA,A,,
+STT_pcrneg_Run4,STT_pcrneg,Run4,controls,,NA,NA,,,Control,NA,,,NA,A,,
+STT_Undetermined_Run3,STT_Undetermined,Run3,,,NA,NA,,,Control,NA,,,NA,,,
+STT_Undetermined_Run4,STT_Undetermined,Run4,,,NA,NA,,,Control,NA,,,NA,,,
